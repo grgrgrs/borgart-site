@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+
+const pageTitle = "About";
+const description = "Who I am, and how I think about building systems for people.";
+---
+
+<BaseLayout title={pageTitle} description={description}>
+  <Section eyebrow="About" title="Who’s behind borgart.ai">
+    <p>
+      I’m a long-time practitioner at the intersection of software, data, and human beings. Over the years I’ve worked
+      in development, analytics, UI, product architecture, and customer relationship roles — always with the same goal:
+      make the right information available to the right person at the right time.
+    </p>
+    <p>
+      borgart.ai is the independent, focused expression of that work. I build small, sharp systems that help people
+      think more clearly with the data and knowledge they already have.
+    </p>
+  </Section>
+
+  <Section title="How I work">
+    <ul class="mt-2 space-y-1 text-sm">
+      <li>· I listen carefully before I design anything.</li>
+      <li>· I favor clarity and maintainability over complexity.</li>
+      <li>· I use AI where it amplifies, not replaces, human judgment.</li>
+      <li>· I respect your time, your constraints, and your domain expertise.</li>
+    </ul>
+  </Section>
+</BaseLayout>

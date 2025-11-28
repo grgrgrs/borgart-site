@@ -1,0 +1,117 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+import CTA from "../components/CTA.astro";
+
+const pageTitle = "Home";
+const description = "I make information usable.";
+---
+
+<BaseLayout title={pageTitle} description={description}>
+
+  <section class="max-w-3xl mx-auto text-left space-y-6 pb-8">
+
+    <h2 class="text-2xl font-semibold tracking-tight">
+      We start simple — one clear step with lasting value.
+    </h2>
+
+    <p class="text-lg opacity-85 leading-relaxed">
+      You don’t need a long roadmap, a big budget, or months of work.  
+      We pick one meaningful question, one dataset, or one decision loop —  
+      and make it visible, understandable, and useful.  
+      Even if that’s all you ever need, you walk away stronger.
+    </p>
+
+  </section>
+
+  <section class="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 py-6">
+
+    <div class="border rounded-lg p-5 text-left">
+      <h3 class="font-medium text-lg mb-1">Try It</h3>
+      <p class="text-sm opacity-75 leading-relaxed">
+        A quick starter — see what better visibility or automation can do  
+        using the data you already have.
+      </p>
+    </div>
+
+    <div class="border rounded-lg p-5 text-left">
+      <h3 class="font-medium text-lg mb-1">Learn What Matters</h3>
+      <p class="text-sm opacity-75 leading-relaxed">
+        Build clarity and confidence — patterns, trends, and decisions  
+        supported by real signals instead of guesswork.
+      </p>
+    </div>
+
+    <div class="border rounded-lg p-5 text-left">
+      <h3 class="font-medium text-lg mb-1">Apply for Impact</h3>
+      <p class="text-sm opacity-75 leading-relaxed">
+        Put insights to work. Automate tasks, improve outcomes,  
+        move from reactive to intentional.
+      </p>
+    </div>
+
+  </section>
+
+
+
+  <!-- Story Section -->
+  <section class="max-w-3xl mx-auto py-12 space-y-10">
+
+    <h2 class="text-lg font-semibold text-center mb-2">
+      Real problems — solved simply
+    </h2>
+
+    <p>“It felt like our data was held hostage by Pharaoh’s scribes.”  
+    We built a clean structure — suddenly the work moved again.</p>
+
+    <p>“If someone could just tell me the top 20 vendors we paid last year, I’d be happy.”  
+    The data existed — scattered. We consolidated it. One answer, seconds.</p>
+
+    <p class="text-sm opacity-75 leading-relaxed">
+      Different industries, same pattern: data scattered, underused, or invisible.
+      Once it’s structured and surfaced, decisions get faster, confidence grows,
+      and opportunities stop slipping through the cracks.
+    </p>
+    </section>
+
+
+  <!-- Outcomes -->
+  <section class="max-w-4xl mx-auto text-center py-12 space-y-10">
+
+    <h2 class="text-lg font-medium opacity-85">
+      What changes when data becomes usable?
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
+
+      <div>
+        <div class="text-3xl font-bold opacity-90">↓ 70%</div>
+        <p class="text-sm opacity-70">manual data wrangling</p>
+      </div>
+
+      <div>
+        <div class="text-3xl font-bold opacity-90">↑ 5×</div>
+        <p class="text-sm opacity-70">faster answers to recurring questions</p>
+      </div>
+
+      <div>
+        <div class="text-3xl font-bold opacity-90">New signals</div>
+        <p class="text-sm opacity-70">patterns & insight you couldn’t see before</p>
+      </div>
+
+    </div>
+
+    <p class="opacity-75 text-sm mt-6">
+      You don’t need huge systems — just clarity you can act on.
+    </p>
+
+    <a href="/contact"
+       class="mt-4 inline-block px-6 py-3 rounded-md bg-gray-900 text-white hover:opacity-80 transition">
+      Let's explore your data together
+    </a>
+  </section>
+
+
+
+
+</BaseLayout>

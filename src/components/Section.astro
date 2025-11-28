@@ -1,0 +1,30 @@
+---
+interface Props {
+  title?: string;
+  eyebrow?: string;
+}
+
+const { title, eyebrow } = Astro.props;
+---
+
+<section class="space-y-8 leading-relaxed">
+  {(eyebrow || title) && (
+    <header class="space-y-1">
+      {eyebrow && (
+        <div class="uppercase text-sm tracking-wide opacity-70">
+          {eyebrow}
+        </div>
+      )}
+
+      {title && (
+        <h2 class="text-3xl font-semibold tracking-tight">
+          {title}
+        </h2>
+      )}
+
+    </header>
+  )}
+  <div class="space-y-3 text-sm leading-relaxed text-slate-200">
+    <slot />
+  </div>
+</section>

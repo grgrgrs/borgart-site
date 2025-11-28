@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+import CTA from "../components/CTA.astro";
+
+const pageTitle = "Work";
+const description = "Selected examples of systems, tools, and workflows I’ve built.";
+---
+
+<BaseLayout title={pageTitle} description={description}>
+  <Section eyebrow="Selected Work" title="Examples of what I build">
+    <p>I don’t just plan systems — I build them. Here are a few representative projects.</p>
+  </Section>
+
+  <Section title="Tobori — AI-driven knowledge explorer">
+    <p>
+      <strong>What it is:</strong> A system that ingests AI-related news, embeds it, and makes it explorable via a
+      graph-based interface.
+    </p>
+    <p>
+      <strong>Why it matters:</strong> Shows how scattered articles and feeds can be turned into a navigable,
+      theme-aware knowledge map instead of a firehose.
+    </p>
+    <p class="text-xs text-sky-300/80 mt-1">
+      (Public site: <a href="https://tobori.ai" class="underline hover:text-sky-200" target="_blank">tobori.ai</a>)
+    </p>
+  </Section>
+
+  <Section title="Pickleball tournament automation POC">
+    <p>
+      <strong>What it is:</strong> A proof-of-concept that takes raw tournament results and automatically generates
+      social-media-ready posts.
+    </p>
+    <p>
+      <strong>Why it matters:</strong> Demonstrates an end-to-end workflow: structured inputs → AI-assisted narrative →
+      consistent, ready-to-publish output.
+    </p>
+  </Section>
+
+  <Section title="Peyote penwrap pattern designer">
+    <p>
+      <strong>What it is:</strong> A niche tool for designing beaded penwrap patterns using a peyote stitch layout.
+    </p>
+    <p>
+      <strong>Why it matters:</strong> Shows that even highly specific creative workflows can be captured in focused,
+      usable UIs — turning tacit knowledge into tool-supported practice.
+    </p>
+  </Section>
+
+  <Section title="Glorious Lens — photography site">
+    <p>
+      <strong>What it is:</strong> A photography-focused site designed for clarity, image emphasis, and simple
+      navigation.
+    </p>
+    <p>
+      <strong>Why it matters:</strong> Demonstrates range from systems and automation to front-of-house presentation and
+      layout.
+    </p>
+  </Section>
+
+  <Section>
+    <p>
+      These are starting points. If you have a specific domain, data shape, or workflow in mind, we can explore what a
+      tailored solution would look like for you.
+    </p>
+  </Section>
+
+  <CTA
+    title="Have a problem in mind?"
+    body="Share a sketch of your idea, your data, or your pain points. I’ll tell you honestly whether I can help — and what a first step might look like."
+  />
+</BaseLayout>

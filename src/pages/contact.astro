@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+
+const pageTitle = "Contact";
+const description = "Get in touch about a project, idea, or problem you’d like to make more usable.";
+---
+
+<BaseLayout title={pageTitle} description={description}>
+  <Section eyebrow="Contact" title="Let’s start with what’s hard to use">
+    <p>
+      You don’t need a perfect spec. A paragraph and a sample file are enough to begin.
+    </p>
+    <p class="mt-4 text-sm">
+      📧 <span class="font-mono text-sky-300">your-email@borgart.ai</span>
+    </p>
+    <p class="mt-2 text-xs text-slate-400">
+      (Replace with your real contact; optionally add a booking link or simple form.)
+    </p>
+  </Section>
+</BaseLayout>

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----- GLOBAL TEXT DEFAULTS ----- */
+
+/* Light mode: near-black */
+html {
+  --text-color: #222; /* adjust to #111 or #333 if needed */
+  color: var(--text-color);
+}
+
+/* Dark mode: light gray */
+html.dark {
+  --text-color: #e5e5e5;
+  color: var(--text-color);
+}
+
+/* Remove all theme accents from links */
+a,
+p,
+span,
+li,
+h1,h2,h3,h4,h5,h6 {
+  color: var(--text-color) !important;
+}
+
+/* ===== Mobile-first readability ===== */
+html { font-size: 17px; }                /* was ~16 — subtle but meaningful */
+p { line-height: 1.6; }                  /* more breathable blocks */
+
+@media (min-width: 640px) {              /* tablet+ refines downward slightly */
+  html { font-size: 16px; }
+}
+
+@media (min-width: 1024px) {             /* desktop reads smoother tighter */
+  html { font-size: 17px; line-height: 1.55; }
+}
+
+html {
+  font-size: 17px;   /* was 16px, small shift but big readability */
+}
+@media (min-width: 900px) {
+  html {
+    font-size: 18px; /* desktop gets a bump */
+  }
+}

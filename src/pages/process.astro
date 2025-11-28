@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+import CTA from "../components/CTA.astro";
+
+const pageTitle = "Process";
+const description = "What it’s like to work together — from first conversation to working system.";
+---
+
+<BaseLayout title={pageTitle} description={description}>
+  <Section eyebrow="Process" title="A light but structured way to work">
+    <p>
+      The goal is to move from “we have a problem” to “we have something that works” without unnecessary ceremony.
+      Here’s how that usually looks.
+    </p>
+  </Section>
+
+  <Section title="1. Understand the mess">
+    <p>
+      We start with your reality: screenshots, spreadsheets, documents, hand-drawn diagrams — whatever describes what’s
+      hard right now. The objective isn’t to be polished; it’s to be honest.
+    </p>
+  </Section>
+
+  <Section title="2. Define a small, clear outcome">
+    <p>
+      Together we define a first outcome that’s small enough to be realistic and big enough to be useful. That might be
+      a prototype, a cleaned-up dataset, a dashboard, or a simple tool.
+    </p>
+  </Section>
+
+  <Section title="3. Build, show, adjust">
+    <p>
+      I build a first version, we walk through it, and we adjust based on your feedback. This loop is deliberately
+      tight so we don’t drift into overbuilding or solving the wrong problem.
+    </p>
+  </Section>
+
+  <Section title="4. Decide what’s next">
+    <p>
+      Once the initial solution is in place, you decide: keep it as-is, extend it, or schedule recurring support. There
+      is no assumption of an ongoing commitment beyond what’s agreed.
+    </p>
+  </Section>
+
+  <CTA
+    title="Curious whether your problem fits this model?"
+    body="Send a short note describing your situation. If I’m not the right fit, I’ll say so plainly."
+  />
+</BaseLayout>
