@@ -1,0 +1,150 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "Start Here";
+const description = "New to companion devices for older adults? Start here. Find the right direction based on what you need.";
+---
+
+<BaseLayout title={pageTitle} description={description}>
+
+  <!-- ===== Header ===== -->
+  <section class="pt-10 pb-6">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Start here
+    </div>
+    <h1 class="text-[1.8rem] font-light tracking-tight leading-[1.35]" style="color: var(--text-primary); letter-spacing: -0.02em;">
+      Find the right companion device — without the noise.
+    </h1>
+    <p class="mt-6 text-[0.95rem] leading-[1.7] max-w-[520px]" style="color: var(--text-secondary);">
+      There are more options than ever, and most of the information available is marketing. This page helps you narrow things down based on what actually matters: who it's for, what you're hoping for, and what won't work.
+    </p>
+    <div class="gradient-line mt-5"></div>
+  </section>
+
+  <!-- ===== Step 1: What are you hoping for? ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-2" style="color: var(--text-tertiary);">
+      Step 1
+    </div>
+    <div class="text-[1.1rem] font-semibold mb-3" style="color: var(--text-primary);">
+      What are you hoping for?
+    </div>
+    <p class="text-[0.88rem] leading-relaxed mb-6" style="color: var(--text-secondary);">
+      Different devices are good at different things. Knowing your primary goal helps rule out most of the noise.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Companionship & conversation</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">A presence that talks, listens, or engages throughout the day. Reduces silence and loneliness.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Comfort & soothing presence</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">Something warm, tactile, calming. Not about conversation — about feeling less alone.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Caregiver peace of mind</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">Check-ins, activity updates, routine support. Helps the caregiver as much as the elder.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Cognitive engagement</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">Games, memory prompts, trivia, structured activities. Keeps the mind active.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Step 2: Living situation ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-2" style="color: var(--text-tertiary);">
+      Step 2
+    </div>
+    <div class="text-[1.1rem] font-semibold mb-3" style="color: var(--text-primary);">
+      Where will this be used?
+    </div>
+    <p class="text-[0.88rem] leading-relaxed mb-6" style="color: var(--text-secondary);">
+      Environment shapes everything — what's practical, what's allowed, and who's nearby to help if something goes wrong.
+    </p>
+    <div class="space-y-3">
+      <div class="flex gap-4 items-baseline">
+        <span class="text-[0.72rem] font-semibold min-w-[20px]" style="color: var(--text-tertiary);">—</span>
+        <span class="text-[0.92rem] leading-relaxed" style="color: var(--text-secondary);"><strong style="color: var(--text-primary); font-weight: 600;">At home, living independently</strong> — most options work, but setup and ongoing support fall on family or the user.</span>
+      </div>
+      <div class="flex gap-4 items-baseline">
+        <span class="text-[0.72rem] font-semibold min-w-[20px]" style="color: var(--text-tertiary);">—</span>
+        <span class="text-[0.92rem] leading-relaxed" style="color: var(--text-secondary);"><strong style="color: var(--text-primary); font-weight: 600;">At home with caregiver present</strong> — more options available, including devices that need occasional reset or charging help.</span>
+      </div>
+      <div class="flex gap-4 items-baseline">
+        <span class="text-[0.72rem] font-semibold min-w-[20px]" style="color: var(--text-tertiary);">—</span>
+        <span class="text-[0.92rem] leading-relaxed" style="color: var(--text-secondary);"><strong style="color: var(--text-primary); font-weight: 600;">Assisted living or memory care</strong> — durability, infection control, and staff buy-in matter. Some devices aren't practical in shared settings.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Step 3: Hard constraints ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-2" style="color: var(--text-tertiary);">
+      Step 3
+    </div>
+    <div class="text-[1.1rem] font-semibold mb-3" style="color: var(--text-primary);">
+      Any dealbreakers?
+    </div>
+    <p class="text-[0.88rem] leading-relaxed mb-6" style="color: var(--text-secondary);">
+      These filters eliminate quickly. If any of these matter, they should drive your shortlist.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">No subscriptions</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">Many devices require $20–$50/month to function. Some don't.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">No always-on mic or camera</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">Privacy-minimal options exist, but they trade off conversational ability.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Unreliable Wi-Fi</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">Most companions need a connection. A few work offline or degrade gracefully.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Must be screen-free</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">Some people don't want or can't use screens. Physical companions and voice-only options exist.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== What to read next ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      What to read next
+    </div>
+    <p class="text-[0.95rem] leading-[1.7] mb-6" style="color: var(--text-secondary);">
+      Once you have a sense of your goals and constraints, these are the best places to go:
+    </p>
+    <div class="space-y-3">
+      <a href="/reviews" class="list-item">
+        <span class="text-[0.92rem] font-medium">Device reviews</span>
+        <span class="text-[0.72rem]" style="color: var(--text-tertiary);">Detailed, consistent evaluations</span>
+      </a>
+      <a href="/guides" class="list-item">
+        <span class="text-[0.92rem] font-medium">Guides</span>
+        <span class="text-[0.72rem]" style="color: var(--text-tertiary);">Practical how-to and decision help</span>
+      </a>
+      <a href="/method" class="list-item">
+        <span class="text-[0.92rem] font-medium">How I evaluate</span>
+        <span class="text-[0.72rem]" style="color: var(--text-tertiary);">The rubric behind every review</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="cta-block my-8">
+    <div class="text-[1.1rem] font-semibold mb-2 relative" style="color: var(--text-primary);">
+      Still not sure where to start?
+    </div>
+    <div class="text-[0.9rem] leading-relaxed relative" style="color: var(--text-secondary);">
+      Send me a few sentences about your situation and I'll point you in the right direction. No commitment, no sales pitch.
+    </div>
+    <a href="/contact" class="text-link text-[0.88rem] mt-5 relative">
+      Get in touch <span class="arrow">→</span>
+    </a>
+  </div>
+
+</BaseLayout>

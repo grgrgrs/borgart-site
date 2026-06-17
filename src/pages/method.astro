@@ -1,0 +1,165 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "Method";
+const description = "How I evaluate companion devices for older adults. The rubric, the process, and the principles behind every review.";
+---
+
+<BaseLayout title={pageTitle} description={description}>
+
+  <!-- ===== Header ===== -->
+  <section class="pt-10 pb-6">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Method
+    </div>
+    <h1 class="text-[1.8rem] font-light tracking-tight leading-[1.35]" style="color: var(--text-primary); letter-spacing: -0.02em;">
+      How I evaluate
+    </h1>
+    <p class="mt-6 text-[0.95rem] leading-[1.7] max-w-[520px]" style="color: var(--text-secondary);">
+      Every device I review gets the same treatment. The rubric exists so you can compare across devices and trust that what shaped the outcome is the evaluation — not a relationship with the manufacturer.
+    </p>
+    <div class="gradient-line mt-5"></div>
+  </section>
+
+  <!-- ===== The Rubric ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      The rubric
+    </div>
+    <p class="text-[0.95rem] leading-[1.7] mb-6" style="color: var(--text-secondary);">
+      Each review evaluates the device across six dimensions. I describe what I observed rather than assign numerical scores — but the structure is identical across every review so you can compare meaningfully.
+    </p>
+
+    <div class="space-y-6">
+      <div class="py-4" style="border-bottom: 1px solid var(--border-light);">
+        <div class="text-[0.95rem] font-semibold mb-2" style="color: var(--text-primary);">1. Setup friction</div>
+        <div class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">
+          How long does it take to go from opening the box to a working device? What can go wrong? Does the user need help, and how much? I document the full unboxing-to-functioning path, including Wi-Fi setup, account creation, app pairing, and any required updates.
+        </div>
+      </div>
+
+      <div class="py-4" style="border-bottom: 1px solid var(--border-light);">
+        <div class="text-[0.95rem] font-semibold mb-2" style="color: var(--text-primary);">2. Daily value after novelty</div>
+        <div class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">
+          What does the device reliably do at day 30 that it also did on day 1? Novelty decay is the single biggest reason companion devices end up in drawers. I evaluate what remains useful, engaging, or comforting after the initial excitement fades.
+        </div>
+      </div>
+
+      <div class="py-4" style="border-bottom: 1px solid var(--border-light);">
+        <div class="text-[0.95rem] font-semibold mb-2" style="color: var(--text-primary);">3. Caregiver layer</div>
+        <div class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">
+          What can a remote caregiver see, control, or be notified about? Is there a companion app? Can multiple caregivers access it? How useful is the information provided — is it actionable or just noise? A device that helps the elder but gives the caregiver nothing is only half a solution.
+        </div>
+      </div>
+
+      <div class="py-4" style="border-bottom: 1px solid var(--border-light);">
+        <div class="text-[0.95rem] font-semibold mb-2" style="color: var(--text-primary);">4. Privacy & data behavior</div>
+        <div class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">
+          Does the device have a microphone? A camera? Is it always listening? What data goes to the cloud, and what stays local? How clear is the privacy policy — could a non-technical family member understand it? I describe what I observe about data behavior in plain language.
+        </div>
+      </div>
+
+      <div class="py-4" style="border-bottom: 1px solid var(--border-light);">
+        <div class="text-[0.95rem] font-semibold mb-2" style="color: var(--text-primary);">5. True cost of ownership</div>
+        <div class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">
+          Device price is just the start. I document: required subscriptions, optional add-ons that feel essential, replacement part availability, and what happens financially if the device breaks or the company shuts down. The goal is: what will this actually cost over 12 months?
+        </div>
+      </div>
+
+      <div class="py-4" style="border-bottom: 1px solid var(--border-light);">
+        <div class="text-[0.95rem] font-semibold mb-2" style="color: var(--text-primary);">6. Durability & support</div>
+        <div class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">
+          Warranty terms, repair options, customer support responsiveness, and the company's financial stability. A companion device that the user bonds with and then loses due to a company shutdown is a real harm. I assess the risk as honestly as I can.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== The Process ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      The process
+    </div>
+    <div class="space-y-3">
+      <div class="flex gap-4 items-baseline">
+        <span class="text-[0.72rem] font-semibold min-w-[20px]" style="color: var(--text-tertiary);">01</span>
+        <span class="text-[0.92rem] leading-relaxed" style="color: var(--text-secondary);"><strong style="color: var(--text-primary); font-weight: 600;">Acquire the device.</strong> I purchase retail when possible. If a company provides a unit, I disclose that clearly.</span>
+      </div>
+      <div class="flex gap-4 items-baseline">
+        <span class="text-[0.72rem] font-semibold min-w-[20px]" style="color: var(--text-tertiary);">02</span>
+        <span class="text-[0.92rem] leading-relaxed" style="color: var(--text-secondary);"><strong style="color: var(--text-primary); font-weight: 600;">Set up as a real user would.</strong> No special access, no vendor support line. I follow the instructions in the box.</span>
+      </div>
+      <div class="flex gap-4 items-baseline">
+        <span class="text-[0.72rem] font-semibold min-w-[20px]" style="color: var(--text-tertiary);">03</span>
+        <span class="text-[0.92rem] leading-relaxed" style="color: var(--text-secondary);"><strong style="color: var(--text-primary); font-weight: 600;">Use it for at least two weeks.</strong> Daily interaction, varied scenarios, realistic conditions. I pay attention to what changes after the first few days.</span>
+      </div>
+      <div class="flex gap-4 items-baseline">
+        <span class="text-[0.72rem] font-semibold min-w-[20px]" style="color: var(--text-tertiary);">04</span>
+        <span class="text-[0.92rem] leading-relaxed" style="color: var(--text-secondary);"><strong style="color: var(--text-primary); font-weight: 600;">Document against the rubric.</strong> Same six categories, same depth, every time.</span>
+      </div>
+      <div class="flex gap-4 items-baseline">
+        <span class="text-[0.72rem] font-semibold min-w-[20px]" style="color: var(--text-tertiary);">05</span>
+        <span class="text-[0.92rem] leading-relaxed" style="color: var(--text-secondary);"><strong style="color: var(--text-primary); font-weight: 600;">Write a clear verdict.</strong> "Best for X, avoid if Y." No hedging, no "it depends" without specifics.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Principles ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Principles
+    </div>
+    <div class="space-y-4">
+      <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+        <strong style="color: var(--text-primary); font-weight: 600;">Agency over infantilization.</strong> The best companion devices support independence and dignity. I evaluate whether a device treats the user as a capable person or as someone to be managed.
+      </p>
+      <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+        <strong style="color: var(--text-primary); font-weight: 600;">Friction is real.</strong> A device that's wonderful in theory but painful to set up is not a good device. I take setup and maintenance seriously because families do too.
+      </p>
+      <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+        <strong style="color: var(--text-primary); font-weight: 600;">Privacy is non-negotiable.</strong> Older adults deserve the same privacy expectations as anyone else. Always-on listening is a choice that should be disclosed and understood, not hidden in a terms-of-service document.
+      </p>
+      <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+        <strong style="color: var(--text-primary); font-weight: 600;">Novelty is not value.</strong> Week one impressions are interesting. Month two impressions are useful. I try to evaluate what lasts.
+      </p>
+      <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+        The research and policy documents that inform these principles are collected on the <a href="/reading" class="underline underline-offset-2 hover:opacity-70 transition" style="color: var(--text-primary);">Reading</a> page.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Disclosures ===== -->
+  <section class="py-8" id="disclosures" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Disclosures
+    </div>
+    <div class="space-y-4">
+      <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+        I do not accept paid placements or sponsored reviews. Product rankings are never influenced by affiliate revenue.
+      </p>
+      <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+        If a manufacturer provides a review unit, this is disclosed at the top of the review. I purchase devices at retail whenever possible.
+      </p>
+      <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+        I may include affiliate links in the future. If I do, they will be clearly marked and will never affect the evaluation or ranking of a device.
+      </p>
+      <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+        I am not a medical professional. Nothing on this site constitutes medical, therapeutic, or clinical advice. If you're making care decisions for someone with cognitive impairment or other medical conditions, please consult with their healthcare provider.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="cta-block my-8">
+    <div class="text-[1.1rem] font-semibold mb-2 relative" style="color: var(--text-primary);">
+      Questions about the methodology?
+    </div>
+    <div class="text-[0.9rem] leading-relaxed relative" style="color: var(--text-secondary);">
+      If you think I'm missing something important in how I evaluate these devices, I genuinely want to hear about it.
+    </div>
+    <a href="/contact" class="text-link text-[0.88rem] mt-5 relative">
+      Get in touch <span class="arrow">→</span>
+    </a>
+  </div>
+
+</BaseLayout>

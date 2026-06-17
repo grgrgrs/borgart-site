@@ -1,33 +1,37 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,ts,tsx,vue,svelte,md,mdx}"],
-  darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        warm: {
+          50:  '#faf9f7',
+          100: '#f5f3ef',
+          200: '#f0ede8',
+          300: '#e8e5e0',
+          400: '#c4b5a0',
+          500: '#a8c4b8',
+          600: '#8a8a8a',
+          700: '#5a5a5a',
+          800: '#1a1a1a',
+        }
+      },
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+      },
       typography: {
         DEFAULT: {
           css: {
-            color: "#1e293b",              // slate-800
-            a: { color: "#0284c7" },       // sky-600
-            strong: { color: "#0f172a" },  // slate-900
-            h1: { color: "#0f172a" },
-            h2: { color: "#0f172a" },
-            h3: { color: "#0f172a" },
-            h4: { color: "#0f172a" },
-            p: { color: "#334155" },       // slate-700
+            color: "#1a1a1a",
+            a: { color: "#1a1a1a", textDecoration: "underline", textUnderlineOffset: "3px" },
+            strong: { color: "#1a1a1a" },
+            h1: { color: "#1a1a1a" },
+            h2: { color: "#1a1a1a" },
+            h3: { color: "#1a1a1a" },
+            h4: { color: "#1a1a1a" },
+            p: { color: "#5a5a5a" },
           }
         },
-        dark: {
-          css: {
-            color: "#e2e8f0",              // slate-200
-            a: { color: "#38bdf8" },       // sky-300
-            strong: { color: "#fff" },
-            h1: { color: "#fff" },
-            h2: { color: "#fff" },
-            h3: { color: "#f1f5f9" },
-            p: { color: "#cbd5e1" },       // slate-300
-          }
-        }
       }
     }
   },

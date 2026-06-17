@@ -1,30 +1,100 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Section from "../components/Section.astro";
 
 const pageTitle = "About";
-const description = "Who I am, and how I think about building systems for people.";
+const description = "Who George Rogers is, why he focuses on small-business information workflows, and what he's been building.";
 ---
 
 <BaseLayout title={pageTitle} description={description}>
-  <Section eyebrow="About" title="Who’s behind borgart.ai">
-    <p>
-      I’m a long-time practitioner at the intersection of software, data, and human beings. Over the years I’ve worked
-      in development, analytics, UI, product architecture, and customer relationship roles — always with the same goal:
-      make the right information available to the right person at the right time.
-    </p>
-    <p>
-      borgart.ai is the independent, focused expression of that work. I build small, sharp systems that help people
-      think more clearly with the data and knowledge they already have.
-    </p>
-  </Section>
 
-  <Section title="How I work">
-    <ul class="mt-2 space-y-1 text-sm">
-      <li>· I listen carefully before I design anything.</li>
-      <li>· I favor clarity and maintainability over complexity.</li>
-      <li>· I use AI where it amplifies, not replaces, human judgment.</li>
-      <li>· I respect your time, your constraints, and your domain expertise.</li>
-    </ul>
-  </Section>
+  <!-- ===== Header ===== -->
+  <section class="pt-10 pb-6">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      About
+    </div>
+    <h1 class="text-[1.8rem] font-light tracking-tight leading-[1.35]" style="color: var(--text-primary); letter-spacing: -0.02em;">
+      I'm George Rogers.
+    </h1>
+    <div class="gradient-line mt-5"></div>
+  </section>
+
+  <!-- ===== Who I am ===== -->
+  <section class="pb-6">
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      Retired computer expert — years of software development, data work, and systems that connect information to the people who need it. Based in Southwest Florida. For the past couple of years I've been fully immersed in what's actually possible with today's tools, building things and running experiments constantly.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      I'm available to work with businesses remotely, or in person if you're in Southwest Florida.
+    </p>
+  </section>
+
+  <!-- ===== Why information workflows ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Why small-business information workflows
+    </div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      The longer I've worked with information systems, the more obvious it is that the core problem is usually the same: information gets scattered, and people spend a surprising amount of time and mental energy tracking it down, keeping it straight, or compensating for the fact that it got lost.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      I got interested in small businesses specifically because the problem is usually solvable. It doesn't take a large system or a big budget — it takes a clear look at where the friction is and a simple, targeted fix. What I'm most interested in is reducing overwhelm. Chasing shiny tools for their own sake doesn't do that.
+    </p>
+  </section>
+
+  <!-- ===== Credibility stories ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-6" style="color: var(--text-tertiary);">
+      Some things I've built for myself
+    </div>
+
+    <div class="space-y-8">
+      <div>
+        <div class="text-[0.92rem] font-semibold mb-2" style="color: var(--text-primary);">Using AI to keep up with AI</div>
+        <p class="text-[0.9rem] leading-[1.7]" style="color: var(--text-secondary);">
+          The volume of news and writing about AI tools is genuinely overwhelming — even for someone paying close attention. I built a tool (Tobori) that reads a large daily stream of that content and surfaces what's actually relevant to me. It's a practical example of using a workflow to tame an information flood rather than drowning in it.
+        </p>
+      </div>
+
+      <div>
+        <div class="text-[0.92rem] font-semibold mb-2" style="color: var(--text-primary);">Daily notes, then let the system sort it out</div>
+        <p class="text-[0.9rem] leading-[1.7]" style="color: var(--text-secondary);">
+          I keep one daily note where everything goes — tasks, client thoughts, ideas, random things to follow up on. Once a day, an automated workflow reads it and files everything where it belongs: tasks to a task list, client notes to the right folder, ideas somewhere they won't get lost. The mental relief of not having to decide where things go all day is significant. This is something I think translates directly to small businesses.
+        </p>
+      </div>
+
+      <div>
+        <div class="text-[0.92rem] font-semibold mb-2" style="color: var(--text-primary);">Asking questions of client and project files</div>
+        <p class="text-[0.9rem] leading-[1.7]" style="color: var(--text-secondary);">
+          I use tools that let me ask questions over a folder of documents rather than hunting through them manually. "What did we do on this project last spring?" "What issues kept coming up?" "What did I say I'd deliver?" This is one of the most immediately useful things I show small businesses, because almost everyone has a version of this problem.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Connection to small businesses ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      How this connects to your business
+    </div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      These aren't exotic experiments. They're practical approaches to the same problems small businesses face every day — just at a different scale. The tools are accessible and the workflows are straightforward. What takes time is figuring out exactly where your pain is and designing something that fits how you actually work.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      That's what I do. I'm based in Southwest Florida and happy to meet in person if you're nearby, or work by video call from anywhere.
+    </p>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="cta-block my-8">
+    <div class="text-[1.1rem] font-semibold mb-2 relative" style="color: var(--text-primary);">
+      Want to get in touch?
+    </div>
+    <div class="text-[0.9rem] leading-relaxed relative" style="color: var(--text-secondary);">
+      If you'd like to talk about your business, an upcoming class, or just have a question — feel free to reach out.
+    </div>
+    <a href="/contact" class="text-link text-[0.88rem] mt-5 relative">
+      Contact <span class="arrow">→</span>
+    </a>
+  </div>
+
 </BaseLayout>

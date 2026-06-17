@@ -1,0 +1,98 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "Reading";
+const description = "Curated research, studies, and policy documents on AI companion devices and assistive technology for older adults.";
+
+// ─── Reading entries organized by topic ───
+// Add new entries to the appropriate topic array
+// Each entry: { title, source, year, url, note }
+
+const topics = [
+  {
+    name: "Companion robots & social isolation",
+    description: "Research on whether companion devices actually reduce loneliness — and under what conditions.",
+    entries: [
+      {
+        title: "Harmful Traits of AI Companions",
+        source: "arXiv>cs",
+        year: "2025",
+        url: "https://arxiv.org/abs/2511.14972v2",
+        note: "This paper proposes a framework for analyzing how AI companionship can harm users, mapping specific traits like lack of natural relationship endpoints and vulnerability to product shutdowns back to their causes and forward to effects on autonomy, human relationships, and society. It examines 18 potentially harmful traits, explores where existing law falls short, and offers design recommendations for reducing risk. Fair minded in looking at all sides, specific in effects and proposals, detailed references, and interesting."
+      },
+    ]
+  },
+
+  {
+    name: "Privacy & ethics in elder care technology",
+    description: "Always-on devices in the homes of vulnerable people. The stakes are high.",
+    entries: [
+
+    ]
+  },
+  {
+    name: "Policy & regulatory landscape",
+    description: "Where governments and institutions are drawing lines — or failing to.",
+    entries: [
+
+    ]
+  },
+];
+---
+
+<BaseLayout title={pageTitle} description={description}>
+
+  <!-- ===== Header ===== -->
+  <section class="pt-10 pb-6">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Reading
+    </div>
+    <h1 class="text-[1.8rem] font-light tracking-tight leading-[1.35]" style="color: var(--text-primary); letter-spacing: -0.02em;">
+      What I'm reading
+    </h1>
+    <p class="mt-6 text-[0.95rem] leading-[1.7] max-w-[520px]" style="color: var(--text-secondary);">
+      Research, policy documents, and studies that inform how I evaluate companion devices. Organized by topic, annotated with what I found useful and why.
+    </p>
+    <div class="gradient-line mt-5"></div>
+  </section>
+
+  <!-- ===== Topic Sections ===== -->
+  {topics.map((topic) => (
+    <section class="py-8" style="border-top: 1px solid var(--border-light);">
+      <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-2" style="color: var(--text-tertiary);">
+        {topic.name}
+      </div>
+      <p class="text-[0.88rem] leading-relaxed mb-6" style="color: var(--text-secondary);">
+        {topic.description}
+      </p>
+
+      <div class="space-y-6">
+        {topic.entries.map((entry) => (
+          <div class="py-4" style="border-bottom: 1px solid var(--border-light);">
+            <a href={entry.url}
+               class="text-[0.95rem] font-semibold hover:opacity-70 transition"
+               style="color: var(--text-primary); text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 1px;"
+               target="_blank"
+               rel="noopener noreferrer">
+              {entry.title}
+            </a>
+            <div class="text-[0.78rem] mt-1 mb-2" style="color: var(--text-tertiary);">
+              {entry.source} · {entry.year}
+            </div>
+            <div class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">
+              {entry.note}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <!-- ===== Note ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <p class="text-[0.88rem] leading-relaxed" style="color: var(--text-tertiary);">
+      This page is updated as I find new material worth sharing. It's not exhaustive — it's what I've actually read and found useful. If you know of something I should see, <a href="/contact" class="underline underline-offset-2 hover:opacity-70 transition" style="color: var(--text-secondary);">let me know</a>.
+    </p>
+  </section>
+
+</BaseLayout>

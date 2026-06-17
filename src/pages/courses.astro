@@ -1,0 +1,250 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "Courses";
+const description = "Four classes on using AI — from a light beginner introduction to hands-on small-business workshops.";
+---
+
+<BaseLayout title={pageTitle} description={description}>
+
+  <!-- ===== Header ===== -->
+  <section class="pt-10 pb-6">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Courses
+    </div>
+    <h1 class="text-[1.8rem] font-light tracking-tight leading-[1.35]" style="color: var(--text-primary); letter-spacing: -0.02em;">
+      Four classes, from curious beginner to hands-on lab.
+    </h1>
+    <p class="mt-5 text-[0.95rem] leading-[1.7] max-w-[480px]" style="color: var(--text-secondary);">
+      All classes are available online. The on-site option is available in Southwest Florida.
+    </p>
+    <div class="gradient-line mt-5"></div>
+  </section>
+
+  <!-- ===== Summary cards ===== -->
+  <section class="pb-6">
+    <div class="space-y-4">
+
+      <a href="#ai-for-fun" class="card block no-underline group">
+        <div class="flex items-baseline justify-between gap-4">
+          <div>
+            <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">AI for Fun</div>
+            <div class="text-[0.82rem]" style="color: var(--text-tertiary);">A light-hearted introduction to using AI better</div>
+          </div>
+          <span class="text-[0.78rem] shrink-0 transition-transform group-hover:translate-x-1" style="color: var(--text-tertiary);">Details ↓</span>
+        </div>
+        <p class="text-[0.85rem] leading-relaxed mt-3" style="color: var(--text-secondary);">
+          Beginner-friendly. Playful examples. Two practical skills most casual users miss.
+        </p>
+        <div class="flex gap-3 mt-3">
+          <span class="text-[0.72rem] font-medium px-2 py-0.5 rounded-full" style="background: var(--bg-warm); color: var(--text-tertiary);">Free</span>
+          <span class="text-[0.72rem]" style="color: var(--text-tertiary);">1 hour · Zoom</span>
+        </div>
+      </a>
+
+      <a href="#practical-ai" class="card block no-underline group">
+        <div class="flex items-baseline justify-between gap-4">
+          <div>
+            <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Practical AI for Small Business</div>
+            <div class="text-[0.82rem]" style="color: var(--text-tertiary);">An overview of where AI can help with real business work</div>
+          </div>
+          <span class="text-[0.78rem] shrink-0 transition-transform group-hover:translate-x-1" style="color: var(--text-tertiary);">Details ↓</span>
+        </div>
+        <p class="text-[0.85rem] leading-relaxed mt-3" style="color: var(--text-secondary);">
+          Starts with your problems, not the tools. Writing, follow-up, content, documentation, and more.
+        </p>
+        <div class="flex gap-3 mt-3">
+          <span class="text-[0.72rem] font-medium px-2 py-0.5 rounded-full" style="background: var(--bg-warm); color: var(--text-tertiary);">Free</span>
+          <span class="text-[0.72rem]" style="color: var(--text-tertiary);">1 hour · Zoom</span>
+        </div>
+      </a>
+
+      <a href="#ai-lab" class="card block no-underline group">
+        <div class="flex items-baseline justify-between gap-4">
+          <div>
+            <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Small Business AI Lab</div>
+            <div class="text-[0.82rem]" style="color: var(--text-tertiary);">A hands-on workshop for building useful workflows</div>
+          </div>
+          <span class="text-[0.78rem] shrink-0 transition-transform group-hover:translate-x-1" style="color: var(--text-tertiary);">Details ↓</span>
+        </div>
+        <p class="text-[0.85rem] leading-relaxed mt-3" style="color: var(--text-secondary);">
+          Multi-session. Bring a real problem. Leave with a tested workflow.
+        </p>
+        <div class="flex gap-3 mt-3">
+          <span class="text-[0.72rem] font-medium px-2 py-0.5 rounded-full" style="background: var(--bg-warm); color: var(--text-tertiary);">$195 · first cohort</span>
+          <span class="text-[0.72rem]" style="color: var(--text-tertiary);">3 sessions · 3½ hours total · Zoom</span>
+        </div>
+      </a>
+
+      <a href="#whats-coming" class="card block no-underline group">
+        <div class="flex items-baseline justify-between gap-4">
+          <div>
+            <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">What's Coming in AI</div>
+            <div class="text-[0.82rem]" style="color: var(--text-tertiary);">A guided look at emerging tools and possibilities</div>
+          </div>
+          <span class="text-[0.78rem] shrink-0 transition-transform group-hover:translate-x-1" style="color: var(--text-tertiary);">Details ↓</span>
+        </div>
+        <p class="text-[0.85rem] leading-relaxed mt-3" style="color: var(--text-secondary);">
+          Avatars, agents, video, voice, and what's real versus hype. Informed curiosity over excitement.
+        </p>
+        <div class="flex gap-3 mt-3">
+          <span class="text-[0.72rem] font-medium px-2 py-0.5 rounded-full" style="background: var(--bg-warm); color: var(--text-tertiary);">Free</span>
+          <span class="text-[0.72rem]" style="color: var(--text-tertiary);">1 hour · Zoom</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ===== Full descriptions ===== -->
+
+  <section id="ai-for-fun" class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-1" style="color: var(--text-tertiary);">Class 1</div>
+    <h2 class="text-[1.3rem] font-semibold tracking-tight mb-1" style="color: var(--text-primary);">AI for Fun</h2>
+    <p class="text-[0.85rem] mb-2" style="color: var(--text-tertiary);">A light-hearted introduction to using AI better</p>
+    <div class="flex gap-3 mb-6">
+      <span class="text-[0.72rem] font-medium px-2 py-0.5 rounded-full" style="background: var(--bg-warm); color: var(--text-tertiary);">Free</span>
+      <span class="text-[0.72rem]" style="color: var(--text-tertiary);">1 hour · Zoom</span>
+    </div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      AI for Fun is a relaxed, beginner-friendly class for people who are curious about AI, casual users who have only tried it a little, and even people who think they already "basically get it."
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      The class uses playful, low-pressure examples: asking AI to write something funny, explain a confusing topic in plain language, create a birthday message, brainstorm a trip idea, or turn a simple thought into a short story, poem, or picture description.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      But underneath the fun, participants learn two important skills that many casual users miss. First, AI can do more than answer a question — it can suggest what you might do next, offer options, and help you think through possibilities. Second, you don't always have to know exactly what to ask. You can ask AI to ask <em>you</em> questions, helping you clarify your goal, your audience, your style, or the kind of result you want.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      The focus is not on technical theory or jargon. It is on learning how to have a more useful conversation with AI: asking, refining, exploring options, and letting the tool help shape the next step.
+    </p>
+    <div class="mt-6 text-[0.85rem]" style="color: var(--text-tertiary);">
+      Best for: beginners, casual users, community groups, mature adults, and anyone who wants a friendly but meaningful first experience with AI.
+    </div>
+  </section>
+
+  <section id="practical-ai" class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-1" style="color: var(--text-tertiary);">Class 2</div>
+    <h2 class="text-[1.3rem] font-semibold tracking-tight mb-1" style="color: var(--text-primary);">Practical AI for Small Business</h2>
+    <p class="text-[0.85rem] mb-2" style="color: var(--text-tertiary);">An overview of where AI can help with real business work</p>
+    <div class="flex gap-3 mb-6">
+      <span class="text-[0.72rem] font-medium px-2 py-0.5 rounded-full" style="background: var(--bg-warm); color: var(--text-tertiary);">Free</span>
+      <span class="text-[0.72rem]" style="color: var(--text-tertiary);">1 hour · Zoom</span>
+    </div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      This course is for small-business owners, managers, and staff who want to understand where AI can help in day-to-day operations. Rather than starting with "Which tool should I use?", the class starts with a better question: "Where is work repetitive, delayed, manual, confusing, or falling through the cracks?"
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      The course focuses on practical areas where current tools can already be useful: writing customer emails, improving follow-up, creating social media and newsletter content, summarizing notes, drafting procedures, organizing information, building checklists, handling common questions, and improving routine communication.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      Participants learn how to identify good use cases, how to write better prompts, and how to evaluate output critically. This course is designed to help business owners see realistic opportunities before deciding what to implement.
+    </p>
+    <div class="mt-5 pt-5" style="border-top: 1px solid var(--border-light);">
+      <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-3" style="color: var(--text-tertiary);">Agenda</div>
+      <div class="space-y-2">
+        <div class="flex gap-3 text-[0.88rem]">
+          <span style="color: var(--text-tertiary);">1.</span>
+          <span style="color: var(--text-secondary);">Intro</span>
+        </div>
+        <div class="flex gap-3 text-[0.88rem]">
+          <span style="color: var(--text-tertiary);">2.</span>
+          <span style="color: var(--text-secondary);">Notebook LM</span>
+        </div>
+        <div class="flex gap-3 text-[0.88rem]">
+          <span style="color: var(--text-tertiary);">3.</span>
+          <span style="color: var(--text-secondary);">Brief chatbot interlude — "You're doing it wrong"</span>
+        </div>
+        <div class="flex gap-3 text-[0.88rem]">
+          <span style="color: var(--text-tertiary);">4.</span>
+          <span style="color: var(--text-secondary);">Claude Cowork</span>
+        </div>
+        <div class="flex gap-3 text-[0.88rem]">
+          <span style="color: var(--text-tertiary);">5.</span>
+          <div>
+            <span style="color: var(--text-secondary);">Example implementations</span>
+            <div class="mt-1.5 ml-2 space-y-1">
+              <div class="flex gap-2 text-[0.82rem]">
+                <span style="color: var(--text-tertiary);">—</span>
+                <span style="color: var(--text-tertiary);">Evolve FM</span>
+              </div>
+              <div class="flex gap-2 text-[0.82rem]">
+                <span style="color: var(--text-tertiary);">—</span>
+                <span style="color: var(--text-tertiary);">Lyndon City Council</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-3 text-[0.88rem]">
+          <span style="color: var(--text-tertiary);">6.</span>
+          <span style="color: var(--text-secondary);">Fun Stuff</span>
+        </div>
+        <div class="flex gap-3 text-[0.88rem]">
+          <span style="color: var(--text-tertiary);">7.</span>
+          <span style="color: var(--text-secondary);">Workshop Promo</span>
+        </div>
+      </div>
+    </div>
+    <div class="mt-6 text-[0.85rem]" style="color: var(--text-tertiary);">
+      Best for: small businesses, nonprofits, solo operators, local organizations, and teams that want a practical overview of how AI may support communication, admin, marketing, documentation, and workflow.
+    </div>
+  </section>
+
+  <section id="ai-lab" class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-1" style="color: var(--text-tertiary);">Class 3</div>
+    <h2 class="text-[1.3rem] font-semibold tracking-tight mb-1" style="color: var(--text-primary);">Small Business AI Lab</h2>
+    <p class="text-[0.85rem] mb-2" style="color: var(--text-tertiary);">A hands-on workshop for building useful AI-assisted workflows</p>
+    <div class="flex gap-3 mb-6">
+      <span class="text-[0.72rem] font-medium px-2 py-0.5 rounded-full" style="background: var(--bg-warm); color: var(--text-tertiary);">$195 · first cohort &nbsp;·&nbsp; $349 thereafter</span>
+      <span class="text-[0.72rem]" style="color: var(--text-tertiary);">3 sessions · 3½ hours total · Zoom</span>
+    </div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      This multi-session lab is for business owners and teams who are ready to go beyond examples and apply AI to their own work. Participants bring real tasks, recurring frustrations, or workflow problems from their business and use the lab to develop practical solutions.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      Across the sessions, participants identify one or more high-value use cases, test prompts and tools, refine outputs, and create repeatable workflows they can continue using after the workshop. Examples might include a reusable customer follow-up process, a newsletter or social media workflow, a procedure-writing system, an intake-to-summary process, or a set of prompts for common business communications.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      The lab is intentionally practical. The goal is not just to learn about AI, but to leave with something useful: a tested prompt set, a documented workflow, a repeatable process, or a clearer plan for next-step automation.
+    </p>
+    <div class="mt-6 text-[0.85rem]" style="color: var(--text-tertiary);">
+      Best for: small-business owners, managers, staff, consultants, nonprofits, and local organizations that want hands-on help applying AI to their actual work.
+    </div>
+  </section>
+
+  <section id="whats-coming" class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-1" style="color: var(--text-tertiary);">Class 4</div>
+    <h2 class="text-[1.3rem] font-semibold tracking-tight mb-1" style="color: var(--text-primary);">What's Coming in AI</h2>
+    <p class="text-[0.85rem] mb-2" style="color: var(--text-tertiary);">A guided look at emerging AI tools and possibilities</p>
+    <div class="flex gap-3 mb-6">
+      <span class="text-[0.72rem] font-medium px-2 py-0.5 rounded-full" style="background: var(--bg-warm); color: var(--text-tertiary);">Free</span>
+      <span class="text-[0.72rem]" style="color: var(--text-tertiary);">1 hour · Zoom</span>
+    </div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      This class looks beyond today's most common uses and explores where the technology appears to be heading. Topics may include AI avatars, animation, video generation, voice tools, synthetic media, autonomous agents, multi-step workflows, and experimental tools that coordinate multiple AI capabilities.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      The purpose is not to imply that every business should immediately adopt these tools. Some are still new, fragile, expensive, or not yet proven in everyday settings. Instead, this class helps participants understand what is emerging, what may become useful, and what should still be approached with caution.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      The emphasis is on informed curiosity: seeing what is possible, understanding the direction of the technology, and learning how to distinguish exciting demonstrations from tools that are stable and valuable enough for regular use.
+    </p>
+    <div class="mt-6 text-[0.85rem]" style="color: var(--text-tertiary);">
+      Best for: curious learners, business owners watching future trends, creative professionals, educators, and organizations that want to understand what may be next without getting swept up in hype.
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="cta-block my-8">
+    <div class="text-[1.1rem] font-semibold mb-2 relative" style="color: var(--text-primary);">
+      Interested in a class?
+    </div>
+    <div class="text-[0.9rem] leading-relaxed relative" style="color: var(--text-secondary);">
+      Email me with the class name and a little about your situation. I'll reply with available dates and any details you need.
+    </div>
+    <a href="mailto:george@borgart.ai?subject=Class interest" class="text-link text-[0.88rem] mt-5 relative">
+      george@borgart.ai <span class="arrow">→</span>
+    </a>
+  </div>
+
+</BaseLayout>

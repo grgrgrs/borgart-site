@@ -1,0 +1,125 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "AI That Knows Your Business";
+const description = "A practical, plain-English class for small business owners on turning real business materials into useful AI workflows.";
+const registerUrl = "https://us06web.zoom.us/meeting/register/iq27OR98TU67qfqCFmeOyA#/registration";
+---
+
+<BaseLayout title={pageTitle} description={description}>
+
+  <!-- ===== Header ===== -->
+  <section class="pt-10 pb-6 fade-in">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Upcoming class
+    </div>
+    <h1 class="text-[1.8rem] font-light tracking-tight leading-[1.35]" style="color: var(--text-primary); letter-spacing: -0.02em;">
+      AI That Knows Your Business
+    </h1>
+    <p class="mt-5 text-[0.95rem] leading-[1.7] max-w-[480px]" style="color: var(--text-secondary);">
+      A practical, plain-English class for small business owners. No technical background required. Learn how AI can work with your real emails, documents, FAQs, notes, spreadsheets, and customer questions — beyond generic prompts or marketing copy.
+    </p>
+    <div class="gradient-line mt-5"></div>
+  </section>
+
+  <!-- ===== Bring / Leave callout ===== -->
+  <section class="pb-6">
+    <div class="cta-block">
+      <div class="text-[0.95rem] font-semibold mb-2 relative" style="color: var(--text-primary);">
+        Bring one annoying, repetitive business task. Take away a solution.
+      </div>
+      <p class="text-[0.88rem] leading-relaxed relative" style="color: var(--text-secondary);">
+        Leave with a better sense of whether AI can help — and what information it would need from your business.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Generic AI vs Business-Powered AI ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-6" style="color: var(--text-tertiary);">
+      What's the difference?
+    </div>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-3" style="color: var(--text-primary);">Generic AI</div>
+        <ul class="space-y-2.5 text-[0.85rem] leading-relaxed" style="color: var(--text-secondary);">
+          <li>Works from vague prompts, not your real materials</li>
+          <li>Produces one-off, generic-sounding answers</li>
+          <li>Does not remember your services, prices, or policies</li>
+          <li>Hard to trust with real customer conversations</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-3" style="color: var(--text-primary);">Business-Powered AI</div>
+        <ul class="space-y-2.5 text-[0.85rem] leading-relaxed" style="color: var(--text-secondary);">
+          <li>Built on your own FAQs, policies, and past emails</li>
+          <li>Uses a private knowledge base instead of one-off prompts</li>
+          <li>Sounds like your business, not generic AI text</li>
+          <li>Supports more accurate, consistent customer responses</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== What you'll learn ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      What you'll learn
+    </div>
+    <div class="space-y-5">
+      <div>
+        <p class="text-[0.92rem] leading-relaxed" style="color: var(--text-secondary);">
+          How to turn FAQs, policies, price lists, notes, manuals, and customer questions into a searchable AI knowledge base using <strong style="color: var(--text-primary);">NotebookLM</strong>
+        </p>
+      </div>
+      <div>
+        <p class="text-[0.92rem] leading-relaxed" style="color: var(--text-secondary);">
+          How to use <strong style="color: var(--text-primary);">Claude Projects</strong> to organize your business context, examples, tone, and repeatable tasks
+        </p>
+      </div>
+      <div>
+        <p class="text-[0.92rem] leading-relaxed" style="color: var(--text-secondary);">
+          How AI coworker-style workflows using Claude or GPT-based tools can help with follow-up emails, simple reports, organizing notes, and recurring office tasks
+        </p>
+      </div>
+      <div>
+        <p class="text-[0.92rem] leading-relaxed" style="color: var(--text-secondary);">
+          How to decide where AI makes sense for your business — and where it probably does not
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Class details ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Class details
+    </div>
+    <div class="space-y-3 text-[0.92rem]" style="color: var(--text-secondary);">
+      <div><span class="font-medium" style="color: var(--text-primary);">Free class</span> for small business owners</div>
+      <div><span class="font-medium" style="color: var(--text-primary);">Date:</span> July 1, 2026</div>
+      <div><span class="font-medium" style="color: var(--text-primary);">Time:</span> 3 PM – 4 PM ET</div>
+      <div><span class="font-medium" style="color: var(--text-primary);">Host:</span> IG Management Group</div>
+    </div>
+  </section>
+
+  <!-- ===== Register CTA ===== -->
+  <div class="cta-block my-8">
+    <div class="text-[1.1rem] font-semibold mb-2 relative" style="color: var(--text-primary);">
+      Ready to join?
+    </div>
+    <div class="text-[0.9rem] leading-relaxed mb-5 relative" style="color: var(--text-secondary);">
+      Save your spot for the free live class on July 1, 2026.
+    </div>
+    <a
+      href={registerUrl}
+      target="_blank"
+      rel="noopener"
+      class="inline-block px-6 py-3 rounded-md text-[0.88rem] font-medium text-center transition hover:opacity-80 relative"
+      style="background: var(--text-primary); color: var(--bg);"
+    >
+      Register for AI Knows Business Class
+    </a>
+  </div>
+
+</BaseLayout>

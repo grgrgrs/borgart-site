@@ -1,0 +1,617 @@
+{
+  "source_file": "IG-Group-Spring-Summer-Website-05-05-2026.xlsx",
+  "source_sheet": "Sheet1",
+  "record_count": 49,
+  "course_count": 15,
+  "vendors": [
+    "Cisco",
+    "CompTIA",
+    "EC-Council",
+    "ISC2"
+  ],
+  "categories": [
+    "Cybersecurity",
+    "IT Foundations",
+    "Networking"
+  ],
+  "courses": [
+    {
+      "id": "cisco-ccna",
+      "vendor": "Cisco",
+      "title": "CCNA",
+      "category": "Networking",
+      "level": "Foundational",
+      "summary": "Develop network implementation, troubleshooting, infrastructure, and routing/switching knowledge through structured, instructor-led certification preparation.",
+      "syllabus": [
+        "Network fundamentals and infrastructure",
+        "Configuration, troubleshooting, and services",
+        "Certification review and practice scenarios"
+      ],
+      "regular_price": 2995,
+      "sale_price": 2695,
+      "schedule": [
+        {
+          "start": "2026-05-18",
+          "end": "2026-05-22",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-06-01",
+          "end": "2026-06-05",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-06-15",
+          "end": "2026-06-19",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-06-22",
+          "end": "2026-06-26",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-06",
+          "end": "2026-07-10",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-27",
+          "end": "2026-07-31",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-03",
+          "end": "2026-08-07",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-17",
+          "end": "2026-08-21",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "cisco-enarsi",
+      "vendor": "Cisco",
+      "title": "ENARSI",
+      "category": "Networking",
+      "level": "Advanced",
+      "summary": "Develop network implementation, troubleshooting, infrastructure, and routing/switching knowledge through structured, instructor-led certification preparation.",
+      "syllabus": [
+        "Network fundamentals and infrastructure",
+        "Configuration, troubleshooting, and services",
+        "Certification review and practice scenarios"
+      ],
+      "regular_price": 3495,
+      "sale_price": 3195,
+      "schedule": [
+        {
+          "start": "2026-06-08",
+          "end": "2026-06-12",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-20",
+          "end": "2026-07-24",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-10",
+          "end": "2026-08-14",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-31",
+          "end": "2026-09-04",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "cisco-encor",
+      "vendor": "Cisco",
+      "title": "ENCOR",
+      "category": "Networking",
+      "level": "Advanced",
+      "summary": "Develop network implementation, troubleshooting, infrastructure, and routing/switching knowledge through structured, instructor-led certification preparation.",
+      "syllabus": [
+        "Network fundamentals and infrastructure",
+        "Configuration, troubleshooting, and services",
+        "Certification review and practice scenarios"
+      ],
+      "regular_price": 3495,
+      "sale_price": 3195,
+      "schedule": [
+        {
+          "start": "2026-06-01",
+          "end": "2026-06-05",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-06-22",
+          "end": "2026-06-26",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-13",
+          "end": "2026-07-17",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-03",
+          "end": "2026-08-07",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-24",
+          "end": "2026-08-28",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "comptia-comptia-a-220-1201-220-1202",
+      "vendor": "CompTIA",
+      "title": "CompTIA A+ (220-1201 & 220-1202)",
+      "category": "IT Foundations",
+      "level": "Foundational",
+      "summary": "Establish core technical foundations across hardware, operating systems, support workflows, troubleshooting, and professional IT readiness.",
+      "syllabus": [
+        "Hardware, software, and device basics",
+        "Support, troubleshooting, and operational workflows",
+        "Practice questions and readiness review"
+      ],
+      "regular_price": 2495,
+      "sale_price": 2195,
+      "schedule": [
+        {
+          "start": "2026-06-01",
+          "end": "2026-06-05",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-06",
+          "end": "2026-07-10",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-10",
+          "end": "2026-08-14",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "comptia-comptia-a-evening-class",
+      "vendor": "CompTIA",
+      "title": "CompTIA A+ Evening Class",
+      "category": "IT Foundations",
+      "level": "Foundational",
+      "summary": "Establish core technical foundations across hardware, operating systems, support workflows, troubleshooting, and professional IT readiness.",
+      "syllabus": [
+        "Hardware, software, and device basics",
+        "Support, troubleshooting, and operational workflows",
+        "Practice questions and readiness review"
+      ],
+      "regular_price": 2495,
+      "sale_price": 2195,
+      "schedule": [
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-17",
+          "start_time": "7:00 PM",
+          "end_time": "10:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-13",
+          "end": "2026-07-24",
+          "start_time": "7:00 PM",
+          "end_time": "10:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "comptia-comptia-cybersecurity-analyst-cysa",
+      "vendor": "CompTIA",
+      "title": "CompTIA Cybersecurity Analyst (CySA+)",
+      "category": "Cybersecurity",
+      "level": "Foundational",
+      "summary": "Build practical security skills for certification-focused roles, with coverage of threat concepts, controls, operations, governance, and exam-readiness practice.",
+      "syllabus": [
+        "Security concepts and threat landscape",
+        "Architecture, controls, and operational response",
+        "Governance, risk, compliance, and exam prep"
+      ],
+      "regular_price": 2995,
+      "sale_price": 2695,
+      "schedule": [
+        {
+          "start": "2026-06-01",
+          "end": "2026-06-05",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-06-22",
+          "end": "2026-06-26",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-27",
+          "end": "2026-08-01",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-31",
+          "end": "2026-09-04",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "comptia-comptia-network-n10-009",
+      "vendor": "CompTIA",
+      "title": "CompTIA Network+ (N10-009)",
+      "category": "Networking",
+      "level": "Foundational",
+      "summary": "Develop network implementation, troubleshooting, infrastructure, and routing/switching knowledge through structured, instructor-led certification preparation.",
+      "syllabus": [
+        "Network fundamentals and infrastructure",
+        "Configuration, troubleshooting, and services",
+        "Certification review and practice scenarios"
+      ],
+      "regular_price": 2495,
+      "sale_price": 2195,
+      "schedule": [
+        {
+          "start": "2026-06-08",
+          "end": "2026-06-12",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-13",
+          "end": "2026-07-17",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-17",
+          "end": "2026-08-21",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "comptia-comptia-network-evening-class",
+      "vendor": "CompTIA",
+      "title": "CompTIA Network+ Evening Class",
+      "category": "Networking",
+      "level": "Foundational",
+      "summary": "Develop network implementation, troubleshooting, infrastructure, and routing/switching knowledge through structured, instructor-led certification preparation.",
+      "syllabus": [
+        "Network fundamentals and infrastructure",
+        "Configuration, troubleshooting, and services",
+        "Certification review and practice scenarios"
+      ],
+      "regular_price": 2495,
+      "sale_price": 2195,
+      "schedule": [
+        {
+          "start": "2026-05-11",
+          "end": "2026-05-22",
+          "start_time": "7:00 PM",
+          "end_time": "10:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-10",
+          "end": "2026-08-21",
+          "start_time": "7:00 PM",
+          "end_time": "10:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "comptia-comptia-pentest",
+      "vendor": "CompTIA",
+      "title": "CompTIA PenTest+",
+      "category": "Cybersecurity",
+      "level": "Advanced",
+      "summary": "Build practical security skills for certification-focused roles, with coverage of threat concepts, controls, operations, governance, and exam-readiness practice.",
+      "syllabus": [
+        "Security concepts and threat landscape",
+        "Architecture, controls, and operational response",
+        "Governance, risk, compliance, and exam prep"
+      ],
+      "regular_price": 3495,
+      "sale_price": 3195,
+      "schedule": [
+        {
+          "start": "2026-06-15",
+          "end": "2026-06-19",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-13",
+          "end": "2026-07-17",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-10",
+          "end": "2026-08-14",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "comptia-comptia-secai",
+      "vendor": "CompTIA",
+      "title": "CompTIA SecAI+",
+      "category": "Cybersecurity",
+      "level": "Advanced",
+      "summary": "Build practical security skills for certification-focused roles, with coverage of threat concepts, controls, operations, governance, and exam-readiness practice.",
+      "syllabus": [
+        "Security concepts and threat landscape",
+        "Architecture, controls, and operational response",
+        "Governance, risk, compliance, and exam prep"
+      ],
+      "regular_price": 2995,
+      "sale_price": 2695,
+      "schedule": [
+        {
+          "start": "2026-06-08",
+          "end": "2026-06-12",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-06",
+          "end": "2026-07-10",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-03",
+          "end": "2026-08-07",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "comptia-comptia-security-sy0-701",
+      "vendor": "CompTIA",
+      "title": "CompTIA Security+ (SY0-701)",
+      "category": "Cybersecurity",
+      "level": "Professional",
+      "summary": "Build practical security skills for certification-focused roles, with coverage of threat concepts, controls, operations, governance, and exam-readiness practice.",
+      "syllabus": [
+        "Security concepts and threat landscape",
+        "Architecture, controls, and operational response",
+        "Governance, risk, compliance, and exam prep"
+      ],
+      "regular_price": 2495,
+      "sale_price": 2195,
+      "schedule": [
+        {
+          "start": "2026-05-18",
+          "end": "2026-05-22",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-06-15",
+          "end": "2026-06-19",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-20",
+          "end": "2026-07-24",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-24",
+          "end": "2026-08-28",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "comptia-comptia-security-evening-class",
+      "vendor": "CompTIA",
+      "title": "CompTIA Security+ Evening Class",
+      "category": "Cybersecurity",
+      "level": "Professional",
+      "summary": "Build practical security skills for certification-focused roles, with coverage of threat concepts, controls, operations, governance, and exam-readiness practice.",
+      "syllabus": [
+        "Security concepts and threat landscape",
+        "Architecture, controls, and operational response",
+        "Governance, risk, compliance, and exam prep"
+      ],
+      "regular_price": 2495,
+      "sale_price": 2195,
+      "schedule": [
+        {
+          "start": "2026-06-08",
+          "end": "2026-06-19",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "comptia-comptia-securityx",
+      "vendor": "CompTIA",
+      "title": "CompTIA SecurityX",
+      "category": "Cybersecurity",
+      "level": "Advanced",
+      "summary": "Build practical security skills for certification-focused roles, with coverage of threat concepts, controls, operations, governance, and exam-readiness practice.",
+      "syllabus": [
+        "Security concepts and threat landscape",
+        "Architecture, controls, and operational response",
+        "Governance, risk, compliance, and exam prep"
+      ],
+      "regular_price": 3495,
+      "sale_price": 3195,
+      "schedule": [
+        {
+          "start": "2026-06-08",
+          "end": "2026-06-12",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-06",
+          "end": "2026-07-10",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-03",
+          "end": "2026-08-07",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "ec-council-ec-council-certified-ethical-hacker-ceh",
+      "vendor": "EC-Council",
+      "title": "EC-Council Certified Ethical Hacker (CEH)",
+      "category": "IT Foundations",
+      "level": "Professional",
+      "summary": "Establish core technical foundations across hardware, operating systems, support workflows, troubleshooting, and professional IT readiness.",
+      "syllabus": [
+        "Hardware, software, and device basics",
+        "Support, troubleshooting, and operational workflows",
+        "Practice questions and readiness review"
+      ],
+      "regular_price": 3495,
+      "sale_price": 3195,
+      "schedule": [
+        {
+          "start": "2026-06-08",
+          "end": "2026-06-12",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-07-27",
+          "end": "2026-08-01",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    },
+    {
+      "id": "isc2-cissp-certified-information-systems-security-professional",
+      "vendor": "ISC2",
+      "title": "CISSP - Certified Information Systems Security Professional",
+      "category": "Cybersecurity",
+      "level": "Advanced",
+      "summary": "Build practical security skills for certification-focused roles, with coverage of threat concepts, controls, operations, governance, and exam-readiness practice.",
+      "syllabus": [
+        "Security concepts and threat landscape",
+        "Architecture, controls, and operational response",
+        "Governance, risk, compliance, and exam prep"
+      ],
+      "regular_price": 3495,
+      "sale_price": 3195,
+      "schedule": [
+        {
+          "start": "2026-06-15",
+          "end": "2026-06-19",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        },
+        {
+          "start": "2026-08-03",
+          "end": "2026-08-07",
+          "start_time": "10:00 AM",
+          "end_time": "6:00 PM",
+          "zone": "ET"
+        }
+      ]
+    }
+  ]
+}

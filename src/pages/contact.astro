@@ -1,21 +1,93 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Section from "../components/Section.astro";
 
 const pageTitle = "Contact";
-const description = "Get in touch about a project, idea, or problem you’d like to make more usable.";
+const description = "Get in touch about AI workflow projects, upcoming classes, or a conversation about your business.";
 ---
 
 <BaseLayout title={pageTitle} description={description}>
-  <Section eyebrow="Contact" title="Let’s start with what’s hard to use">
-    <p>
-      You don’t need a perfect spec. A paragraph and a sample file are enough to begin.
+
+  <!-- ===== Header ===== -->
+  <section class="pt-10 pb-6">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Contact
+    </div>
+    <h1 class="text-[1.8rem] font-light tracking-tight leading-[1.35]" style="color: var(--text-primary); letter-spacing: -0.02em;">
+      Let's talk about your business.
+    </h1>
+    <div class="gradient-line mt-5"></div>
+  </section>
+
+  <!-- ===== Email ===== -->
+  <section class="pb-6">
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      If you'd like to talk about your business, ask about an upcoming class, or discuss a possible project — the simplest way is to email me. A few sentences about your situation is more than enough to start.
     </p>
-    <p class="mt-4 text-sm">
-      📧 <span class="font-mono text-sky-300">your-email@borgart.ai</span>
+    <p class="mt-5">
+      <a href="mailto:george@borgart.ai"
+         class="text-[1rem] font-medium underline underline-offset-4 hover:opacity-70 transition"
+         style="color: var(--text-primary);">
+        george@borgart.ai
+      </a>
     </p>
-    <p class="mt-2 text-xs text-slate-400">
-      (Replace with your real contact; optionally add a booking link or simple form.)
+    <p class="text-[0.88rem] mt-4" style="color: var(--text-secondary);">
+      Based in Southwest Florida. Available locally in person and remotely via video call.
     </p>
-  </Section>
+  </section>
+
+  <!-- ===== Classes ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Interested in a class?
+    </div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      To reserve a spot in an upcoming class or ask about dates, put <strong class="font-medium" style="color: var(--text-primary);">Class interest</strong> in the subject line and tell me a bit about your business. I'll reply with available dates and details.
+    </p>
+    <a href="mailto:george@borgart.ai?subject=Class interest" class="text-link text-[0.88rem] mt-6">
+      Email about a class <span class="arrow">→</span>
+    </a>
+  </section>
+
+  <!-- ===== Contact form ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-6" style="color: var(--text-tertiary);">
+      Or use the form
+    </div>
+    <form
+      action="https://formspree.io/f/placeholder"
+      method="POST"
+      class="space-y-5"
+    >
+      <div>
+        <label class="form-label" for="name">Name</label>
+        <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required />
+      </div>
+      <div>
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required />
+      </div>
+      <div>
+        <label class="form-label" for="interest">I'm interested in</label>
+        <select class="form-input" id="interest" name="interest">
+          <option value="">Select one (optional)</option>
+          <option value="classes">Classes / workshops</option>
+          <option value="project">1-on-1 project work</option>
+          <option value="companion-ai">Companion AI</option>
+          <option value="other">Something else</option>
+        </select>
+      </div>
+      <div>
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-input" id="message" name="message" placeholder="A few sentences about your situation is plenty." required></textarea>
+      </div>
+      <button
+        type="submit"
+        class="px-6 py-3 rounded-md text-[0.88rem] font-medium transition hover:opacity-80"
+        style="background: var(--text-primary); color: var(--bg);"
+      >
+        Send message
+      </button>
+    </form>
+  </section>
+
 </BaseLayout>

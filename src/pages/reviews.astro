@@ -1,0 +1,148 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "Reviews";
+const description = "Independent reviews of AI companion devices for older adults. Consistent rubric, honest evaluations.";
+
+// Review entries — add new reviews here as objects
+// Status: "published" | "in-progress" | "coming-soon"
+const reviews = [
+  {
+    name: "ElliQ by Intuition Robotics",
+    category: "Conversational companion",
+    status: "in-progress",
+    summary: "A proactive conversational companion designed specifically for older adults. Screen-based with voice interaction.",
+    url: "#"
+  },
+  {
+    name: "Joy For All Companion Pets",
+    category: "Comfort / low-cognitive-load",
+    status: "in-progress",
+    summary: "Lifelike robotic cats and dogs designed for comfort and familiarity. No Wi-Fi, no subscription, no screen.",
+    url: "#"
+  },
+  {
+    name: "PARO Therapeutic Seal",
+    category: "Therapeutic / dementia care",
+    status: "coming-soon",
+    summary: "The most studied therapeutic robot in elder care. Used widely in dementia and memory care settings.",
+    url: "#"
+  },
+  {
+    name: 'Tombot "Jennie"',
+    category: "Robotic emotional support",
+    status: "coming-soon",
+    summary: "A realistic robotic puppy designed as an emotional support companion. Developed with guidance from Jim Henson's Creature Shop.",
+    url: "#"
+  },
+  {
+    name: "care.coach Tablet Companion",
+    category: "Avatar + human-in-loop",
+    status: "coming-soon",
+    summary: "A simplified tablet with an animated avatar, backed by real human operators. Bridges AI and human companionship.",
+    url: "#"
+  },
+  {
+    name: "Qoobo by Yukai Engineering",
+    category: "Comfort / minimal interaction",
+    status: "coming-soon",
+    summary: "A cushion with a gently wagging tail. No face, no voice, no screen — designed purely for tactile comfort.",
+    url: "#"
+  },
+];
+
+const statusLabel = {
+  "published": "",
+  "in-progress": "In progress",
+  "coming-soon": "Coming soon",
+};
+
+const statusStyle = {
+  "published": "",
+  "in-progress": "background: var(--gradient-accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent;",
+  "coming-soon": "color: var(--text-tertiary);",
+};
+---
+
+<BaseLayout title={pageTitle} description={description}>
+
+  <!-- ===== Header ===== -->
+  <section class="pt-10 pb-6">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Reviews
+    </div>
+    <h1 class="text-[1.8rem] font-light tracking-tight leading-[1.35]" style="color: var(--text-primary); letter-spacing: -0.02em;">
+      Device reviews
+    </h1>
+    <p class="mt-6 text-[0.95rem] leading-[1.7] max-w-[520px]" style="color: var(--text-secondary);">
+      Every device gets the same rubric: setup friction, daily value, caregiver controls, privacy clarity, true cost, and durability. Consistency over opinion.
+    </p>
+    <div class="gradient-line mt-5"></div>
+  </section>
+
+  <!-- ===== Review List ===== -->
+  <section class="pb-6">
+    {reviews.map((review) => (
+      <a href={review.url} class="block py-6" style="border-bottom: 1px solid var(--border-light); text-decoration: none; transition: all 0.2s;" >
+        <div class="flex items-baseline justify-between mb-1 gap-4">
+          <span class="text-[0.95rem] font-semibold" style="color: var(--text-primary);">
+            {review.name}
+          </span>
+          {review.status !== "published" && (
+            <span class="text-[0.7rem] font-medium whitespace-nowrap" style={statusStyle[review.status]}>
+              {statusLabel[review.status]}
+            </span>
+          )}
+        </div>
+        <div class="text-[0.78rem] font-medium mb-2" style="color: var(--text-tertiary);">
+          {review.category}
+        </div>
+        <div class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">
+          {review.summary}
+        </div>
+      </a>
+    ))}
+  </section>
+
+  <!-- ===== What the rubric covers ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      What every review covers
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Setup friction</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">Time to working state, what can go wrong, who needs to help.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Daily value after novelty</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">What the device reliably provides at day 30, not day 1.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Privacy & data behavior</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">What's always on, what goes to the cloud, how clear the policies are.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Verdict</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">Best for X, avoid if Y. Direct, specific, no hedging.</div>
+      </div>
+    </div>
+    <a href="/method" class="text-link text-[0.88rem] mt-6">
+      Full methodology <span class="arrow">→</span>
+    </a>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="cta-block my-8">
+    <div class="text-[1.1rem] font-semibold mb-2 relative" style="color: var(--text-primary);">
+      Suggest a device for review
+    </div>
+    <div class="text-[0.9rem] leading-relaxed relative" style="color: var(--text-secondary);">
+      Know of a companion device I should evaluate? Bought one that surprised or disappointed you? I'd like to hear about it.
+    </div>
+    <a href="/contact" class="text-link text-[0.88rem] mt-5 relative">
+      Send a suggestion <span class="arrow">→</span>
+    </a>
+  </div>
+
+</BaseLayout>

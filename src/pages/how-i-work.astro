@@ -1,0 +1,114 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "How I Work";
+const description = "How George Rogers approaches AI workflow projects — starting with pain points, not tools.";
+---
+
+<BaseLayout title={pageTitle} description={description}>
+
+  <!-- ===== Header ===== -->
+  <section class="pt-10 pb-6">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      How I work
+    </div>
+    <h1 class="text-[1.8rem] font-light tracking-tight leading-[1.35]" style="color: var(--text-primary); letter-spacing: -0.02em;">
+      I start with your pain points, not with tools.
+    </h1>
+    <div class="gradient-line mt-5"></div>
+  </section>
+
+  <!-- ===== Intro ===== -->
+  <section class="pb-6">
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      Most technology projects go wrong by starting with the technology. Someone reads about a new tool, decides to adopt it, and then tries to figure out where it fits. That's backwards.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      I start by understanding where you're overwhelmed. We focus on a small number of high-impact workflows — usually around documents, email, and follow-ups — and we don't add complexity unless it clearly reduces the bigger pain. When we're done, you have something you can run without me. That's the goal.
+    </p>
+  </section>
+
+  <!-- ===== Step 1 ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.82rem] font-semibold mb-3" style="color: var(--text-primary);">First, we talk about where it really hurts.</div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      I ask questions that get past the surface. Not "what tools do you use?" but "where do you lose track of what's been done for clients?" Or "who is the person you wish you had three of, and what do they spend their time on?" Or "where does not keeping up cost you business?" The answers tell me where the real pain is — and that's what shapes everything else.
+    </p>
+  </section>
+
+  <!-- ===== Step 2 ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.82rem] font-semibold mb-3" style="color: var(--text-primary);">Then we map what's actually happening with your information.</div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      We walk through where information comes from — emails, documents, notes, forms — where it ends up, and where it gets lost. This isn't a formal audit; it's a conversation. Most people haven't thought about this explicitly, but they know exactly where the friction is once we start talking. That map tells us what a realistic workflow can actually fix.
+    </p>
+  </section>
+
+  <!-- ===== Step 3 ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.82rem] font-semibold mb-3" style="color: var(--text-primary);">Next, we design one simple workflow.</div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      We pick one pain point and build something targeted at it. That might mean a way to quickly find what you did for a specific client, a reminder system for follow-ups that doesn't rely on memory, or a way to process a flood of emails without reading every one. The solution is always as simple as it can be — and only uses tools that are already in the budget or clearly worth adding.
+    </p>
+  </section>
+
+  <!-- ===== Step 4 ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.82rem] font-semibold mb-3" style="color: var(--text-primary);">Finally, we test it and make sure your team can run it.</div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      We run the workflow on real work — actual client files, actual emails, actual situations from your business. We adjust until it works reliably. And I leave behind a plain-English explanation of what it does, what it's made of, and how to tweak or fix it. The goal is that your team owns it, not that they're dependent on me.
+    </p>
+  </section>
+
+  <!-- ===== Tools ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      The kinds of tools I use
+    </div>
+    <p class="text-[0.95rem] leading-[1.7] mb-6" style="color: var(--text-secondary);">
+      I don't force specific tools. I pick a small set that fits what you already use and what the workflow actually needs. In practice, that usually means:
+    </p>
+    <div class="space-y-4">
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Writing, summarizing, and answering questions</div>
+        <div class="text-[0.85rem] leading-relaxed" style="color: var(--text-secondary);">Conversational tools like ChatGPT and Claude, used for drafting, summarizing, and extracting information from text.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Chatting with your documents</div>
+        <div class="text-[0.85rem] leading-relaxed" style="color: var(--text-secondary);">Tools that let you ask questions over a folder of files — "What did we do for this client last year?" "What issues kept coming up?" Examples include Claude Projects and NotebookLM.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Keeping things searchable over time</div>
+        <div class="text-[0.85rem] leading-relaxed" style="color: var(--text-secondary);">Note and knowledge tools that make your information findable later, without relying on folder structure or perfect memory.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Connecting what you already use</div>
+        <div class="text-[0.85rem] leading-relaxed" style="color: var(--text-secondary);">Light automation tools like Zapier that connect apps you already have — moving information from one place to another without manual copying.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== What you leave with ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      What you leave with
+    </div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      For each workflow, you get a clear plain-English explanation of what it does, what it's made of at a high level, and how to adjust or fix it when something changes. No black boxes, no "call George when it breaks." I aim to build things your team understands and can own.
+    </p>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="cta-block my-8">
+    <div class="text-[1.1rem] font-semibold mb-2 relative" style="color: var(--text-primary);">
+      Want to talk about your business?
+    </div>
+    <div class="text-[0.9rem] leading-relaxed relative" style="color: var(--text-secondary);">
+      If something on this page sounds familiar, a short conversation is usually enough to figure out whether there's something worth working on together.
+    </div>
+    <a href="/contact" class="text-link text-[0.88rem] mt-5 relative">
+      Get in touch <span class="arrow">→</span>
+    </a>
+  </div>
+
+</BaseLayout>

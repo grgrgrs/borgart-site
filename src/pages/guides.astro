@@ -1,0 +1,145 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "Guides";
+const description = "Practical guides for choosing, introducing, and maintaining AI companion devices for older adults.";
+
+// Guide entries — add new guides here
+// Status: "published" | "in-progress" | "coming-soon"
+const guides = [
+  {
+    name: "How to introduce a companion device without backlash",
+    topic: "Getting started",
+    status: "in-progress",
+    summary: "The difference between a device that gets used and one that sits in a drawer often comes down to how it's introduced. Practical steps for the first 48 hours.",
+    url: "#"
+  },
+  {
+    name: "Novelty decay: why companions stop working after week 3",
+    topic: "Expectations",
+    status: "in-progress",
+    summary: "Most companion devices feel magical on day one and boring by day twenty. Understanding why — and what to do about it.",
+    url: "#"
+  },
+  {
+    name: "Privacy checklist for always-on devices",
+    topic: "Privacy & safety",
+    status: "coming-soon",
+    summary: "What to ask, what to check, and what to disable before putting any companion device in someone's home.",
+    url: "#"
+  },
+  {
+    name: "Questions to ask before buying any companion robot",
+    topic: "Decision making",
+    status: "coming-soon",
+    summary: "Ten questions that will save you from expensive mistakes and unmet expectations. Print this out before you shop.",
+    url: "#"
+  },
+  {
+    name: "Caregiver setup checklist",
+    topic: "Getting started",
+    status: "coming-soon",
+    summary: "Remote admin, Wi-Fi setup, return policies, support contacts, and expectations for the first month. Everything in one place.",
+    url: "#"
+  },
+  {
+    name: "Avoiding vaporware: red flags and questions to ask",
+    topic: "Decision making",
+    status: "coming-soon",
+    summary: "How to tell the difference between a real product and a crowdfunding fantasy. Warning signs I look for.",
+    url: "#"
+  },
+];
+
+const statusLabel = {
+  "published": "",
+  "in-progress": "In progress",
+  "coming-soon": "Coming soon",
+};
+
+const statusStyle = {
+  "published": "",
+  "in-progress": "background: var(--gradient-accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent;",
+  "coming-soon": "color: var(--text-tertiary);",
+};
+---
+
+<BaseLayout title={pageTitle} description={description}>
+
+  <!-- ===== Header ===== -->
+  <section class="pt-10 pb-6">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Guides
+    </div>
+    <h1 class="text-[1.8rem] font-light tracking-tight leading-[1.35]" style="color: var(--text-primary); letter-spacing: -0.02em;">
+      Practical guides
+    </h1>
+    <p class="mt-6 text-[0.95rem] leading-[1.7] max-w-[520px]" style="color: var(--text-secondary);">
+      How to choose, introduce, and maintain companion devices — written for families and care teams, not tech enthusiasts.
+    </p>
+    <div class="gradient-line mt-5"></div>
+  </section>
+
+  <!-- ===== Guide List ===== -->
+  <section class="pb-6">
+    {guides.map((guide) => (
+      <a href={guide.url} class="block py-6" style="border-bottom: 1px solid var(--border-light); text-decoration: none; transition: all 0.2s;">
+        <div class="flex items-baseline justify-between mb-1 gap-4">
+          <span class="text-[0.95rem] font-semibold" style="color: var(--text-primary);">
+            {guide.name}
+          </span>
+          {guide.status !== "published" && (
+            <span class="text-[0.7rem] font-medium whitespace-nowrap" style={statusStyle[guide.status]}>
+              {statusLabel[guide.status]}
+            </span>
+          )}
+        </div>
+        <div class="text-[0.78rem] font-medium mb-2" style="color: var(--text-tertiary);">
+          {guide.topic}
+        </div>
+        <div class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">
+          {guide.summary}
+        </div>
+      </a>
+    ))}
+  </section>
+
+  <!-- ===== Topics ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Topics covered
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Getting started</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">Introduction, setup, first impressions, and early troubleshooting.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Decision making</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">How to compare, what questions to ask, and what to avoid.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Privacy & safety</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">Data practices, always-on devices, and protecting dignity.</div>
+      </div>
+      <div class="card">
+        <div class="text-[0.9rem] font-semibold mb-1" style="color: var(--text-primary);">Expectations</div>
+        <div class="text-[0.82rem] leading-relaxed" style="color: var(--text-secondary);">What to realistically expect at day 1, week 3, and month 6.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="cta-block my-8">
+    <div class="text-[1.1rem] font-semibold mb-2 relative" style="color: var(--text-primary);">
+      Have a question these guides don't cover?
+    </div>
+    <div class="text-[0.9rem] leading-relaxed relative" style="color: var(--text-secondary);">
+      I'm always looking for the next guide to write. If you're stuck on something specific, tell me — it probably means others are stuck too.
+    </div>
+    <a href="/contact" class="text-link text-[0.88rem] mt-5 relative">
+      Suggest a topic <span class="arrow">→</span>
+    </a>
+  </div>
+
+</BaseLayout>

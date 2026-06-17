@@ -1,0 +1,246 @@
+---
+// Hidden reference page for Quest VR browser — not linked from site nav
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VR</title>
+  <style>
+    body {
+      background: #1a1a1a;
+      color: #e8e3dc;
+      font-family: system-ui, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 0 0 2rem;
+      color: #c8bfb0;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #a89880;
+      border-bottom: 1px solid #2e2e2e;
+      padding-bottom: 0.35rem;
+      margin: 2.5rem 0 1rem;
+    }
+
+    h3 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #6a6058;
+      margin: 1.5rem 0 0.6rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #242424;
+      gap: 1rem;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    .item-name {
+      font-size: 1rem;
+      flex: 1;
+    }
+
+    .item-desc {
+      font-size: 0.85rem;
+      color: #7a7068;
+      margin-top: 0.15rem;
+    }
+
+    .item-text {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .checks {
+      display: flex;
+      gap: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .checks label {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: #7a7068;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .checks input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      accent-color: #8aaa8a;
+      flex-shrink: 0;
+    }
+
+    .checks input[type="checkbox"]:checked + span {
+      color: #a8c8a8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>VR Reference</h1>
+
+  <!-- ─── SECTION 1: Experiences ─── -->
+  <h2>Experiential Destinations</h2>
+
+  <h3>Nature / Universe Awe</h3>
+  <ul>
+    <li>
+      <span class="item-text"><span class="item-name">BRINK Traveler</span></span>
+      <span class="checks">
+        <label><input type="checkbox" data-key="brink-traveler-reviewed"><span>Reviewed</span></label>
+        <label><input type="checkbox" data-key="brink-traveler-liked"><span>Liked</span></label>
+      </span>
+    </li>
+    <li>
+      <span class="item-text"><span class="item-name">Soul Retreat</span></span>
+      <span class="checks">
+        <label><input type="checkbox" data-key="soul-retreat-reviewed"><span>Reviewed</span></label>
+        <label><input type="checkbox" data-key="soul-retreat-liked"><span>Liked</span></label>
+      </span>
+    </li>
+    <li>
+      <span class="item-text"><span class="item-name">Nature in Motion: Serenity</span></span>
+      <span class="checks">
+        <label><input type="checkbox" data-key="nature-in-motion-reviewed"><span>Reviewed</span></label>
+        <label><input type="checkbox" data-key="nature-in-motion-liked"><span>Liked</span></label>
+      </span>
+    </li>
+  </ul>
+
+  <h3>Fantastical / Surreal Awe</h3>
+  <ul>
+    <li>
+      <span class="item-text"><span class="item-name">Realms of Flow</span></span>
+      <span class="checks">
+        <label><input type="checkbox" data-key="realms-of-flow-reviewed"><span>Reviewed</span></label>
+        <label><input type="checkbox" data-key="realms-of-flow-liked"><span>Liked</span></label>
+      </span>
+    </li>
+    <li>
+      <span class="item-text"><span class="item-name">TRIPP</span></span>
+      <span class="checks">
+        <label><input type="checkbox" data-key="tripp-reviewed"><span>Reviewed</span></label>
+        <label><input type="checkbox" data-key="tripp-liked"><span>Liked</span></label>
+      </span>
+    </li>
+    <li>
+      <span class="item-text"><span class="item-name">Cosmic Flow</span></span>
+      <span class="checks">
+        <label><input type="checkbox" data-key="cosmic-flow-reviewed"><span>Reviewed</span></label>
+        <label><input type="checkbox" data-key="cosmic-flow-liked"><span>Liked</span></label>
+      </span>
+    </li>
+  </ul>
+
+  <h3>Emotional Awe</h3>
+  <ul>
+    <li>
+      <span class="item-text"><span class="item-name">Out There</span></span>
+      <span class="checks">
+        <label><input type="checkbox" data-key="out-there-reviewed"><span>Reviewed</span></label>
+        <label><input type="checkbox" data-key="out-there-liked"><span>Liked</span></label>
+      </span>
+    </li>
+    <li>
+      <span class="item-text"><span class="item-name">AMAZE VR Concerts</span></span>
+      <span class="checks">
+        <label><input type="checkbox" data-key="amaze-vr-reviewed"><span>Reviewed</span></label>
+        <label><input type="checkbox" data-key="amaze-vr-liked"><span>Liked</span></label>
+      </span>
+    </li>
+  </ul>
+
+  <!-- ─── SECTION 2: Note-taking apps ─── -->
+  <h2>Note-Taking in VR</h2>
+
+  <ul>
+    <li>
+      <span class="item-text">
+        <span class="item-name">Horizon Dock</span>
+        <span class="item-desc">Free productivity overlay for Quest. Small floating reminder/task panel.</span>
+      </span>
+      <span class="checks">
+        <label><input type="checkbox" data-key="horizon-dock-reviewed"><span>Reviewed</span></label>
+        <label><input type="checkbox" data-key="horizon-dock-liked"><span>Liked</span></label>
+      </span>
+    </li>
+    <li>
+      <span class="item-text">
+        <span class="item-name">Note / Notes / Supernotes</span>
+        <span class="item-desc">Native Quest note files. Supernotes is a lightweight notecard/journal app; Note and Notes are simpler general note apps.</span>
+      </span>
+      <span class="checks">
+        <label><input type="checkbox" data-key="supernotes-reviewed"><span>Reviewed</span></label>
+        <label><input type="checkbox" data-key="supernotes-liked"><span>Liked</span></label>
+      </span>
+    </li>
+    <li>
+      <span class="item-text">
+        <span class="item-name">Spaceframe</span>
+        <span class="item-desc">Spatial notebook for research, thinking, and writing — web browsing, notes, and moodboards.</span>
+      </span>
+      <span class="checks">
+        <label><input type="checkbox" data-key="spaceframe-reviewed"><span>Reviewed</span></label>
+        <label><input type="checkbox" data-key="spaceframe-liked"><span>Liked</span></label>
+      </span>
+    </li>
+    <li>
+      <span class="item-text">
+        <span class="item-name">Noda</span>
+        <span class="item-desc">Concept mapping and idea structures — spatial, not just a list.</span>
+      </span>
+      <span class="checks">
+        <label><input type="checkbox" data-key="noda-reviewed"><span>Reviewed</span></label>
+        <label><input type="checkbox" data-key="noda-liked"><span>Liked</span></label>
+      </span>
+    </li>
+  </ul>
+
+  <script>
+    const boxes = document.querySelectorAll('input[type="checkbox"]');
+    boxes.forEach(box => {
+      const key = 'vr-' + box.dataset.key;
+      box.checked = localStorage.getItem(key) === 'true';
+      box.addEventListener('change', () => {
+        localStorage.setItem(key, String(box.checked));
+      });
+    });
+  </script>
+
+</body>
+</html>

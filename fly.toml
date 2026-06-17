@@ -1,0 +1,28 @@
+app = "borgart-site"
+primary_region = "iad"
+
+# No build section required for static hosting unless you later add adapters
+
+[[services]]
+  http_checks = []
+  internal_port = 80        # WAS 8080 – this fixes the wrong redirect
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+  [services.concurrency]
+    type = "connections"
+    soft_limit = 150
+    hard_limit = 200
+
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory = "1gb"

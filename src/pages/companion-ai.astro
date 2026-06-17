@@ -1,0 +1,89 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "Companion AI";
+const description = "George Rogers's ongoing exploration of companion AI — desktop presence devices, sensors, and what it means for humans to relate to technology that feels present.";
+---
+
+<BaseLayout title={pageTitle} description={description}>
+
+  <!-- ===== Header ===== -->
+  <section class="pt-10 pb-6">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Companion AI
+    </div>
+    <h1 class="text-[1.8rem] font-light tracking-tight leading-[1.35]" style="color: var(--text-primary); letter-spacing: -0.02em;">
+      A different kind of AI presence.
+    </h1>
+    <div class="gradient-line mt-5"></div>
+  </section>
+
+  <!-- ===== What companion AI means ===== -->
+  <section class="pb-6">
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      Most AI interaction happens through a chat window — you open it, type something, get an answer, close it. Companion AI is something different: a persistent physical presence tethered to your environment. Eyes and LEDs that react. An antenna that signals attention. A proximity sensor that notices when you're nearby. Speakers that feel like they're coming from somewhere, not a headphone.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      The idea isn't smarter chat. It's ongoing interaction — a device that's part of the room, not just a tool you use and put away.
+    </p>
+  </section>
+
+  <!-- ===== Why I think it matters ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      Why I think it matters
+    </div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      I'm genuinely fascinated by how people relate to technology that feels present. Not just useful — present. There's something meaningfully different about a device that appears to notice you, responds to your proximity, and has a physical form that suggests awareness, even if what's happening underneath is just a language model and some sensors.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      I think this matters most in places where human connection is critical but scarce — loneliness in older adults, high-touch care environments, situations where a gentle, consistent presence could help someone feel less alone. I don't think technology replaces human connection. But I do think there are situations where a well-designed companion device could genuinely help, and I'm curious about what that actually looks like in practice.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      This is exploratory. I'm not selling anything here. I'm genuinely curious, and I'm building things to find out.
+    </p>
+  </section>
+
+  <!-- ===== The lab ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      The companion lab
+    </div>
+    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
+      I have an active companion lab project in progress. It's a physical device tethered to my PC: eyes and LEDs that express state, an antenna, a proximity sensor, speakers. It reacts to presence, listens, responds, and behaves differently depending on context.
+    </p>
+    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
+      It's still evolving — months of work ahead. Each iteration teaches me something about what presence actually means when you strip away the chat window and put AI in a body, however simple.
+    </p>
+  </section>
+
+  <!-- ===== Video ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
+      From the lab
+    </div>
+    <video
+      controls
+      playsinline
+      style="width: 100%; border-radius: 10px; border: 1px solid var(--border);"
+    >
+      <source src="/Twil-v0dot1-051126.mov" type="video/mp4" />
+      <source src="/Twil-v0dot1-051126.mov" type="video/quicktime" />
+    </video>
+    <p class="text-[0.82rem] mt-3" style="color: var(--text-tertiary);">Twil v0.1 &nbsp;·&nbsp; April 11, 2026</p>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="cta-block my-8">
+    <div class="text-[1.1rem] font-semibold mb-2 relative" style="color: var(--text-primary);">
+      Interested in where this is going?
+    </div>
+    <div class="text-[0.9rem] leading-relaxed relative" style="color: var(--text-secondary);">
+      If you work in elder care, home health, or any field where human connection and communication are central — and you're curious about where companion AI might fit — I'd be glad to talk. I'm happy to share what I'm exploring and hear your perspective.
+    </div>
+    <a href="mailto:george@borgart.ai?subject=Companion AI" class="text-link text-[0.88rem] mt-5 relative">
+      Email me <span class="arrow">→</span>
+    </a>
+  </div>
+
+</BaseLayout>
