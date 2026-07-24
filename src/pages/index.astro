@@ -2,21 +2,21 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Home";
-const description = "AI workflows for small businesses that reduce overwhelm by improving how information flows through your business.";
+const description = "Borgart helps businesses turn scattered information, repetitive work, and disconnected tools into intelligent systems that support real work.";
 ---
 
 <BaseLayout title={pageTitle} description={description}>
 
   <!-- ===== Hero ===== -->
   <section class="pt-10 pb-6 fade-in">
-    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-6" style="color: var(--text-tertiary);">
-      Borgart
+    <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-6" style="color: var(--brand-blue);">
+      Borgart · From Signal to System
     </div>
     <h1 class="text-[2.1rem] font-light tracking-tight leading-[1.35] fade-in fade-in-d1" style="color: var(--text-primary); letter-spacing: -0.025em;">
-      AI workflows for small businesses that <strong class="font-semibold">reduce overwhelm</strong> by improving how information flows through your business.
+      Borgart helps businesses turn scattered information, repetitive work, and disconnected tools into <strong class="font-semibold">intelligent systems that support real work</strong>.
     </h1>
     <p class="mt-6 text-[1.05rem] leading-relaxed max-w-[520px] fade-in fade-in-d2" style="color: var(--text-secondary);">
-      I help you find the most painful points in your documents, email, and follow-ups, then design simple workflows your team can run with confidence.
+      We identify practical AI opportunities, design better workflows, and build systems that save time, reduce friction, and help work move forward — with people, not just automation, at the center.
     </p>
     <div class="gradient-line mt-6 fade-in fade-in-d3"></div>
   </section>
@@ -99,20 +99,45 @@ const description = "AI workflows for small businesses that reduce overwhelm by 
     </div>
   </section>
 
-  <!-- ===== What I do ===== -->
+  <!-- ===== What we do ===== -->
   <section class="py-8" style="border-top: 1px solid var(--border-light);">
     <div class="text-[0.7rem] font-semibold uppercase tracking-widest mb-4" style="color: var(--text-tertiary);">
-      What I do
+      What we do
     </div>
-    <p class="text-[0.95rem] leading-[1.7]" style="color: var(--text-secondary);">
-      I focus on information workflows — the way information is captured, stored, and used inside your business. That means documents, email, notes, client histories, follow-up reminders. Most businesses have all of this scattered around, and the cost is real: time lost looking for things, decisions made without the full picture, work falling through the cracks.
+    <p class="text-[0.95rem] leading-[1.7] mb-6" style="color: var(--text-secondary);">
+      Borgart works across four connected areas — starting from the signals already in your business and building toward systems your team can actually run. We add tools only where there's a clear, immediate benefit, and we keep people in control of the work.
     </p>
-    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
-      I start simple. We look at where you feel the most overwhelmed, pick one clear pain point, and design something straightforward to address it. I only add tools where there's an obvious, immediate benefit — tools cost both money and attention, and the goal is to reduce your load, not pile more on.
-    </p>
-    <p class="text-[0.95rem] leading-[1.7] mt-4" style="color: var(--text-secondary);">
-      I'm cautious about technology for its own sake. If a simpler approach works, we use it. If something requires a subscription or training, we make sure it's worth it before committing.
-    </p>
+    <div class="space-y-6">
+      <div>
+        <div class="text-[0.95rem] font-medium mb-1" style="color: var(--text-primary);">AI opportunity assessment</div>
+        <p class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">Understand where work is repetitive, delayed, manual, confusing, or falling through the cracks, and identify realistic opportunities for AI assistance.</p>
+      </div>
+      <div>
+        <div class="text-[0.95rem] font-medium mb-1" style="color: var(--text-primary);">Workflow and automation design</div>
+        <p class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">Connect information, tools, decisions, and recurring work into practical systems that fit how your business already operates.</p>
+      </div>
+      <div>
+        <div class="text-[0.95rem] font-medium mb-1" style="color: var(--text-primary);">AI implementation and advisory</div>
+        <p class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">Support pilots, custom integrations, responsible adoption, and ongoing improvement — so changes stick and keep paying off.</p>
+      </div>
+      <div>
+        <div class="text-[0.95rem] font-medium mb-1" style="color: var(--text-primary);">Products and experiments</div>
+        <p class="text-[0.88rem] leading-relaxed" style="color: var(--text-secondary);">We build our own systems too, testing ideas that can grow into repeatable products for the businesses we work with.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BorgPost (in development) ===== -->
+  <section class="py-8" style="border-top: 1px solid var(--border-light);">
+    <div class="rounded-2xl px-7 py-6" style="border: 1px solid var(--border); background: var(--brand-soft-blue);">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="text-[0.68rem] font-semibold uppercase tracking-widest" style="color: var(--brand-blue);">BorgPost</span>
+        <span class="text-[0.62rem] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full" style="background: var(--brand-white); color: var(--brand-slate); border: 1px solid var(--border);">In development</span>
+      </div>
+      <p class="text-[0.92rem] leading-[1.7]" style="color: var(--text-secondary);">
+        BorgPost is an AI-assisted system being developed to help organizations plan, create, review, schedule, and maintain social-media content — without adding another cumbersome workflow. It's one of the products Borgart is building; if it's a fit for your business, we're happy to talk about early access.
+      </p>
+    </div>
   </section>
 
   <!-- ===== Page links ===== -->
@@ -123,7 +148,7 @@ const description = "AI workflows for small businesses that reduce overwhelm by 
         <span class="text-[0.78rem]" style="color: var(--text-tertiary);">→</span>
       </a>
       <a href="/how-i-work" class="list-item">
-        <span class="text-[0.88rem]" style="color: var(--text-secondary);">How I work</span>
+        <span class="text-[0.88rem]" style="color: var(--text-secondary);">How we work</span>
         <span class="text-[0.78rem]" style="color: var(--text-tertiary);">→</span>
       </a>
       <a href="/about" class="list-item">

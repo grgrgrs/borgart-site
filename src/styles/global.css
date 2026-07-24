@@ -4,18 +4,29 @@
 
 /* ─── Design Tokens ─── */
 :root {
-  --bg:             #faf9f7;
-  --bg-warm:        #f5f3ef;
-  --text-primary:   #1a1a1a;
-  --text-secondary: #5a5a5a;
-  --text-tertiary:  #8a8a8a;
-  --border:         #e8e5e0;
-  --border-light:   #f0ede8;
-  --accent-start:   #c4b5a0;
-  --accent-end:     #a8c4b8;
-  --gradient-accent: linear-gradient(135deg, #c8b8a0 0%, #a0b8a8 100%);
-  --gradient-soft:   linear-gradient(135deg, #d4c5b0 0%, #b8c9be 50%, #b0c0d0 100%);
-  --gradient-subtle: linear-gradient(135deg, rgba(212,197,176,0.12) 0%, rgba(184,201,190,0.12) 50%, rgba(176,192,208,0.12) 100%);
+  /* Brand palette — derived from the Borgart mark (navy → vivid blue) */
+  --brand-navy:        #071B5C;
+  --brand-blue:        #1249D8;
+  --brand-bright-blue: #145BFF;
+  --brand-soft-blue:   #EAF1FF;
+  --brand-ink:         #101828;
+  --brand-slate:       #475467;
+  --brand-light:       #F7F9FC;
+  --brand-white:       #FFFFFF;
+
+  /* Semantic tokens (names preserved so the whole site recolors coherently) */
+  --bg:             #f7f9fc;
+  --bg-warm:        #eaf1ff;
+  --text-primary:   #101828;
+  --text-secondary: #475467;
+  --text-tertiary:  #667085;
+  --border:         #dce3f0;
+  --border-light:   #eaeff7;
+  --accent-start:   #1249d8;
+  --accent-end:     #145bff;
+  --gradient-accent: linear-gradient(135deg, #1249d8 0%, #145bff 100%);
+  --gradient-soft:   linear-gradient(135deg, #071b5c 0%, #1249d8 50%, #145bff 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(18,73,216,0.07) 0%, rgba(20,91,255,0.07) 100%);
 }
 
 /* ─── Base Typography ─── */

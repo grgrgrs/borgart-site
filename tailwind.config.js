@@ -4,16 +4,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        brand: {
+          navy:  '#071B5C',
+          blue:  '#1249D8',
+          bright:'#145BFF',
+          soft:  '#EAF1FF',
+          ink:   '#101828',
+          slate: '#475467',
+          light: '#F7F9FC',
+        },
         warm: {
-          50:  '#faf9f7',
-          100: '#f5f3ef',
-          200: '#f0ede8',
-          300: '#e8e5e0',
-          400: '#c4b5a0',
-          500: '#a8c4b8',
-          600: '#8a8a8a',
-          700: '#5a5a5a',
-          800: '#1a1a1a',
+          50:  '#f7f9fc',
+          100: '#eaf1ff',
+          200: '#eaeff7',
+          300: '#dce3f0',
+          400: '#1249d8',
+          500: '#145bff',
+          600: '#667085',
+          700: '#475467',
+          800: '#101828',
         }
       },
       fontFamily: {
@@ -22,14 +31,14 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            color: "#1a1a1a",
-            a: { color: "#1a1a1a", textDecoration: "underline", textUnderlineOffset: "3px" },
-            strong: { color: "#1a1a1a" },
-            h1: { color: "#1a1a1a" },
-            h2: { color: "#1a1a1a" },
-            h3: { color: "#1a1a1a" },
-            h4: { color: "#1a1a1a" },
-            p: { color: "#5a5a5a" },
+            color: "#101828",
+            a: { color: "#1249D8", textDecoration: "underline", textUnderlineOffset: "3px" },
+            strong: { color: "#101828" },
+            h1: { color: "#101828" },
+            h2: { color: "#101828" },
+            h3: { color: "#101828" },
+            h4: { color: "#101828" },
+            p: { color: "#475467" },
           }
         },
       }

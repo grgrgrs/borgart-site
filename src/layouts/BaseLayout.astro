@@ -6,8 +6,9 @@ export interface Props {
   description?: string;
 }
 const { title, description } = Astro.props;
-const defaultDescription = "AI workflows for small businesses that reduce overwhelm by improving how information flows through your business.";
+const defaultDescription = "Borgart helps businesses turn scattered information, repetitive work, and disconnected tools into intelligent systems that support real work.";
 const currentPath = Astro.url.pathname;
+const brandImage = "https://www.borgart.ai/images/brand/borgart-mark-blue.png";
 ---
 
 <!DOCTYPE html>
@@ -16,9 +17,10 @@ const currentPath = Astro.url.pathname;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>{title ? `${title} — Borgart` : "Borgart — AI workflows for small businesses"}</title>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{title ? `${title} — Borgart` : "Borgart — From Signal to System"}</title>
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <!-- ===== Fonts ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,37 +29,42 @@ const currentPath = Astro.url.pathname;
 
     <!-- ===== SEO ===== -->
     <meta name="description" content={description || defaultDescription} />
-    <meta name="keywords" content="AI workflows small business, business automation, document workflow, information management, Southwest Florida, AI consulting" />
+    <meta name="keywords" content="Borgart, AI consulting, workflow automation, business systems, AI opportunity assessment, practical AI, small business automation, BorgPost" />
 
     <!-- ===== Open Graph ===== -->
-    <meta property="og:title" content={title ? `${title} — Borgart` : "Borgart — AI workflows for small businesses"} />
+    <meta property="og:site_name" content="Borgart" />
+    <meta property="og:title" content={title ? `${title} — Borgart` : "Borgart — From Signal to System"} />
     <meta property="og:description" content={description || defaultDescription} />
     <meta property="og:url" content="https://www.borgart.ai" />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content={brandImage} />
 
     <!-- ===== Twitter Card ===== -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content={title ? `${title} — Borgart` : "Borgart — AI workflows for small businesses"} />
+    <meta name="twitter:title" content={title ? `${title} — Borgart` : "Borgart — From Signal to System"} />
     <meta name="twitter:description" content={description || defaultDescription} />
+    <meta name="twitter:image" content={brandImage} />
 
     <!-- ===== Structured Data ===== -->
-    <script type="application/ld+json">
-    {
+    <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "George Rogers",
+      "@type": "Organization",
+      "name": "Borgart LLC",
+      "alternateName": "Borgart",
       "url": "https://www.borgart.ai",
-      "description": "Helping small businesses reduce overwhelm by designing simple AI-assisted workflows around documents, email, and follow-ups.",
+      "logo": "https://www.borgart.ai/images/brand/borgart-mark-blue.png",
+      "slogan": "From Signal to System",
+      "description": "Borgart helps businesses turn scattered information, repetitive work, and disconnected tools into intelligent systems that support real work.",
+      "founder": { "@type": "Person", "name": "George Rogers" },
       "sameAs": [],
       "knowsAbout": [
-        "AI workflows",
-        "small business automation",
-        "document management",
-        "information workflows",
-        "business process design"
+        "AI opportunity assessment",
+        "workflow and automation design",
+        "AI implementation and advisory",
+        "business systems",
+        "practical AI adoption"
       ]
-    }
-    </script>
+    })}></script>
   </head>
 
   <body class="min-h-screen font-sans" style="background: var(--bg); color: var(--text-primary);">
@@ -65,16 +72,17 @@ const currentPath = Astro.url.pathname;
 
       <!-- ===== Header / Nav ===== -->
       <header class="w-full max-w-[800px] mx-auto px-6 pt-8">
-        <nav class="flex items-baseline justify-between">
-          <a href="/" class="text-[0.95rem] font-semibold tracking-tight hover:opacity-70 transition" style="color: var(--text-primary);">
-            Borgart
+        <nav class="flex items-center justify-between">
+          <a href="/" class="flex items-center gap-2.5 hover:opacity-70 transition" aria-label="Borgart — home">
+            <img src="/images/brand/borgart-mark-blue.png" alt="" width="32" height="32" class="w-8 h-8 shrink-0" />
+            <span class="text-[1.05rem] font-semibold tracking-tight" style="color: var(--text-primary);">Borgart</span>
           </a>
-          <div class="flex gap-7">
+          <div class="flex items-center gap-7">
             <a href="/courses" class={`text-[0.82rem] transition hover:opacity-100 ${currentPath === '/courses' ? 'font-medium opacity-100' : 'opacity-50'}`} style="color: var(--text-primary);">
               Courses
             </a>
             <a href="/how-i-work" class={`text-[0.82rem] transition hover:opacity-100 ${currentPath === '/how-i-work' ? 'font-medium opacity-100' : 'opacity-50'}`} style="color: var(--text-primary);">
-              How I Work
+              How We Work
             </a>
             <a href="/about" class={`text-[0.82rem] transition hover:opacity-100 ${currentPath === '/about' ? 'font-medium opacity-100' : 'opacity-50'}`} style="color: var(--text-primary);">
               About
@@ -97,13 +105,16 @@ const currentPath = Astro.url.pathname;
       <!-- ===== Footer ===== -->
       <footer class="w-full max-w-[800px] mx-auto px-6 mt-16 pt-10 pb-8" style="border-top: 1px solid var(--border-light);">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div class="text-[0.75rem]" style="color: var(--text-tertiary);">
-            Borgart · borgart.ai © {new Date().getFullYear()}
+          <div class="flex items-center gap-2.5">
+            <img src="/images/brand/borgart-mark-blue.png" alt="" width="22" height="22" class="w-[22px] h-[22px] shrink-0" />
+            <span class="text-[0.75rem]" style="color: var(--text-tertiary);">
+              Borgart LLC · borgart.ai · From Signal to System © {new Date().getFullYear()}
+            </span>
           </div>
           <div class="flex gap-5">
             <a href="/courses" class="text-[0.75rem] hover:opacity-100 transition" style="color: var(--text-tertiary);">Courses</a>
             <a href="/ai-opportunity-assessment" class="text-[0.75rem] hover:opacity-100 transition" style="color: var(--text-tertiary);">Assessment</a>
-            <a href="/how-i-work" class="text-[0.75rem] hover:opacity-100 transition" style="color: var(--text-tertiary);">How I Work</a>
+            <a href="/how-i-work" class="text-[0.75rem] hover:opacity-100 transition" style="color: var(--text-tertiary);">How We Work</a>
             <a href="/about" class="text-[0.75rem] hover:opacity-100 transition" style="color: var(--text-tertiary);">About</a>
             <a href="/companion-ai" class="text-[0.75rem] hover:opacity-100 transition" style="color: var(--text-tertiary);">Companion AI</a>
             <a href="/contact" class="text-[0.75rem] hover:opacity-100 transition" style="color: var(--text-tertiary);">Contact</a>
