@@ -72,12 +72,12 @@ const brandImage = "https://www.borgart.ai/images/brand/borgart-mark-blue.png";
 
       <!-- ===== Header / Nav ===== -->
       <header class="w-full max-w-[800px] mx-auto px-6 pt-8">
-        <nav class="flex items-center justify-between">
-          <a href="/" class="flex items-center gap-2.5 hover:opacity-70 transition" aria-label="Borgart — home">
+        <nav class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <a href="/" class="flex items-center gap-2.5 hover:opacity-70 transition shrink-0" aria-label="Borgart — home">
             <img src="/images/brand/borgart-mark-blue.png" alt="" width="32" height="32" class="w-8 h-8 shrink-0" />
             <span class="text-[1.05rem] font-semibold tracking-tight" style="color: var(--text-primary);">Borgart</span>
           </a>
-          <div class="flex items-center gap-7">
+          <div class="flex flex-wrap items-center gap-x-5 gap-y-2 sm:gap-7">
             <a href="/courses" class={`text-[0.82rem] transition hover:opacity-100 ${currentPath === '/courses' ? 'font-medium opacity-100' : 'opacity-50'}`} style="color: var(--text-primary);">
               Courses
             </a>
